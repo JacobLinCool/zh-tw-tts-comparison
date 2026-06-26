@@ -520,7 +520,10 @@ def main(models: str = "omnivoice", limit: int = 0, conditions: str = "raw,contr
                 rec = {"model": mk, "condition": cond, "id": row["id"],
                        "ref_text": ref_text, "input_text": text}
                 try:
-                    wav, vram, infer_s = obj.synthesize.remote(text, ref_bytes, REFERENCE_TEXT, cond == "controlled")
+                    # ensub_ctrl also carries phonetic-control annotations → must use the
+                    # control path (e.g. VoxCPM2 needs normalize=False so {pinyin} isn't spoken).
+                    has_control = cond in ("controlled", "ensub_ctrl")
+                    wav, vram, infer_s = obj.synthesize.remote(text, ref_bytes, REFERENCE_TEXT, has_control)
                     rec["synth_s"] = infer_s            # measured inside the container
                     rec["vram_peak_gb"] = vram
                     rec["gpu"] = GPU

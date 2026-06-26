@@ -27,7 +27,7 @@ Dataset: JacobLinCool/tw-codeswitch-ner (quick test, 25 sentences). Shared Taiwa
 | `voxcpm2` | raw | 25 | 0.043 | 0.065 | 14.1 | 1.11 | 8.6 | 0 |
 | `voxcpm2` | controlled | 25 | 0.043 | 0.049 | 14.2 | 1.13 | 8.6 | 0 |
 | `voxcpm2` | ensub | 25 | 0.040 | 0.057 | 7.8 | 0.61 | 8.6 | 0 |
-| `voxcpm2` | ensub_ctrl | 25 | 0.229 | 0.237 | 15.8 | 1.26 | 8.7 | 0 |
+| `voxcpm2` | ensub_ctrl | 25 | 0.029 | 0.049 | 9.0 | 0.72 | 8.6 | 0 |
 | `moss` | raw | 25 | 0.044 | 0.067 | 13.3 | 0.99 | 13.8 | 0 |
 | `moss` | controlled | 25 | 0.065 | 0.091 | 14.4 | 1.08 | 13.8 | 0 |
 | `moss` | ensub | 25 | 0.057 | 0.066 | 12.2 | 0.97 | 13.8 | 0 |
