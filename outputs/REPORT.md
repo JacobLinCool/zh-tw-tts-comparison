@@ -12,10 +12,10 @@ Dataset: JacobLinCool/tw-codeswitch-ner (quick test, 25 sentences). Shared Taiwa
 
 | Model | Cond | n | MER qwen3 | MER breeze | synth (s) | RTF | VRAM (GB) | err |
 |---|---|--:|--:|--:|--:|--:|--:|--:|
-| `breezyvoice` 🇹🇼 | raw | 25 | 0.178 | 0.182 | 19.3 | 1.59 | 48.4 | 0 |
-| `breezyvoice` 🇹🇼 | controlled | 25 | 0.106 | 0.149 | 22.2 | 1.79 | 48.4 | 0 |
-| `breezyvoice` 🇹🇼 | ensub | 25 | 0.111 | 0.139 | 16.0 | 1.40 | 39.4 | 0 |
-| `breezyvoice` 🇹🇼 | ensub_ctrl | 25 | 0.139 | 0.194 | 14.4 | 1.22 | 39.7 | 0 |
+| `breezyvoice` | raw | 25 | 0.178 | 0.182 | 19.3 | 1.59 | 48.4 | 0 |
+| `breezyvoice` | controlled | 25 | 0.106 | 0.149 | 22.2 | 1.79 | 48.4 | 0 |
+| `breezyvoice` | ensub | 25 | 0.111 | 0.139 | 16.0 | 1.40 | 39.4 | 0 |
+| `breezyvoice` | ensub_ctrl | 25 | 0.139 | 0.194 | 14.4 | 1.22 | 39.7 | 0 |
 | `omnivoice` | raw | 25 | 0.045 | 0.085 | 1.5 | 0.15 | 3.4 | 0 |
 | `omnivoice` | controlled | 25 | 0.049 | 0.074 | 1.5 | 0.16 | 3.6 | 0 |
 | `omnivoice` | ensub | 25 | 0.034 | 0.078 | 1.0 | 0.10 | 3.5 | 0 |
@@ -41,7 +41,7 @@ Dataset: JacobLinCool/tw-codeswitch-ner (quick test, 25 sentences). Shared Taiwa
 
 | Model | short | long | Δ (long−short) |
 |---|--:|--:|--:|
-| `breezyvoice` 🇹🇼 | 0.139 | 0.411 | +0.272 |
+| `breezyvoice` | 0.139 | 0.411 | +0.272 |
 | `omnivoice` | 0.044 | 0.049 | +0.004 |
 | `cosyvoice3` | 0.035 | 0.035 | -0.000 |
 | `voxcpm2` | 0.044 | 0.037 | -0.007 |
@@ -55,7 +55,7 @@ Dataset: JacobLinCool/tw-codeswitch-ner (quick test, 25 sentences). Shared Taiwa
 
 | Model | MER qwen3 | MER breeze | breeze − qwen3 |
 |---|--:|--:|--:|
-| `breezyvoice` 🇹🇼 | 0.178 | 0.182 | +0.004 |
+| `breezyvoice` | 0.178 | 0.182 | +0.004 |
 | `omnivoice` | 0.045 | 0.085 | +0.040 |
 | `cosyvoice3` | 0.035 | 0.064 | +0.029 |
 | `voxcpm2` | 0.043 | 0.065 | +0.023 |
@@ -99,7 +99,7 @@ Sentences re-rendered with real English brand names (Coach, Adidas, Hermès, …
 4. **omnivoice** — MER 0.045 (raw)
 5. **qwen3tts** — MER 0.051 (raw)
 6. **chatterbox** — MER 0.091 (raw)
-7. **breezyvoice** — MER 0.106 (controlled) 🇹🇼
+7. **breezyvoice** — MER 0.106 (controlled)
 
 ## Intelligibility ranking — breeze (best condition, median MER)
 
@@ -109,7 +109,7 @@ Sentences re-rendered with real English brand names (Coach, Adidas, Hermès, …
 4. **qwen3tts** — MER 0.067 (raw)
 5. **omnivoice** — MER 0.074 (controlled)
 6. **chatterbox** — MER 0.130 (raw)
-7. **breezyvoice** — MER 0.149 (controlled) 🇹🇼
+7. **breezyvoice** — MER 0.149 (controlled)
 
 ## Speed & memory (A100-80GB)
 

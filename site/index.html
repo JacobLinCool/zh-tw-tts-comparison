@@ -74,7 +74,6 @@
         padding-bottom:4px; border-bottom:1px solid var(--line); }
   .gh.corner { border-bottom:none; }
   .mname { font-size:13px; color:var(--mut); white-space:nowrap; font-variant:tabular-nums; }
-  .mname.tw::after { content:" 🇹🇼"; }
 
   .cell { display:flex; flex-direction:column; align-items:center; gap:6px; padding:4px 0; }
   .cell.empty { color:var(--line2); }
@@ -155,7 +154,6 @@
 
 <script>
 const ORDER = ["breezyvoice","omnivoice","cosyvoice3","voxcpm2","moss","qwen3tts","chatterbox"];
-const TW = new Set(["breezyvoice"]);
 const SPACE_URL = "https://huggingface.co/spaces/JacobLinCool/zh-tw-tts-arena";
 let DATA, activeModels;
 
@@ -199,7 +197,7 @@ function cardHtml(s){
   let g = '<div class="gh corner"></div>' + conds.map(c=>'<div class="gh">'+esc(c)+'</div>').join('');
   for(const m of activeModels){
     const row = s.clips[m] || {};
-    g += '<div class="mname'+(TW.has(m)?' tw':'')+'">'+esc(m)+'</div>';
+    g += '<div class="mname">'+esc(m)+'</div>';
     for(const cond of conds) g += cell(row[cond]);
   }
   const dur = s.est_duration_s ? s.est_duration_s.toFixed(1)+'s' : '';

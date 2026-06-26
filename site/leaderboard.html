@@ -22,7 +22,7 @@
   table.rank th, table.rank td { padding:9px 10px; border-top:1px solid var(--line); text-align:left; vertical-align:middle; }
   table.rank th { color:var(--mut); font-weight:600; font-size:12px; border-top:none; }
   td.r { font-variant:tabular-nums; color:var(--mut); width:34px; }
-  td.name { font-weight:600; } td.name .tw::after { content:" \1F1F9\1F1FC"; }
+  td.name { font-weight:600; }
   td.num { font-variant:tabular-nums; text-align:right; white-space:nowrap; }
   .bar { position:relative; background:#0d0f13; border:1px solid var(--line); border-radius:6px; height:22px; min-width:150px; }
   .bar > i { position:absolute; top:0; bottom:0; left:0; background:linear-gradient(90deg,#3a527e,#6ea8fe); border-radius:5px; }
@@ -68,7 +68,6 @@
 const VOTES_DATASET = "JacobLinCool/zh-tw-tts-arena-votes";
 const SPACE_URL = "https://huggingface.co/spaces/JacobLinCool/zh-tw-tts-arena";
 const MODEL_ORDER = ["breezyvoice","omnivoice","cosyvoice3","voxcpm2","moss","qwen3tts","chatterbox"];
-const TW = new Set(["breezyvoice"]);
 const PRIOR = 0.1;          // virtual games per ordered pair (keeps BT stable / connected)
 const POLL_MS = 45000;
 document.getElementById('spacelink').href = SPACE_URL;
@@ -188,7 +187,7 @@ function render(votes) {
     const pct = (r.p*100).toFixed(1);
     return '<tr class="'+(rank===0?'top':'')+'">'
       + '<td class="r">'+(rank+1)+'</td>'
-      + '<td class="name"><span class="'+(TW.has(r.m)?'tw':'')+'">'+esc(r.m)+'</span>'+(tied&&rank>0?'':'')+'</td>'
+      + '<td class="name">'+esc(r.m)+'</td>'
       + '<td><div class="bar"><i style="width:'+(100*r.p/maxP).toFixed(1)+'%"></i><span>'+pct+'%</span></div></td>'
       + '<td class="num ci">'+(r.games>0?(r.lo*100).toFixed(1)+'–'+(r.hi*100).toFixed(1):'–')+'</td>'
       + '<td class="num">'+Math.round(r.games)+'</td>'

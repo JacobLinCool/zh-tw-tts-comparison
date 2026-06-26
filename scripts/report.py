@@ -21,7 +21,7 @@ SHORT_BUCKETS = {"XS", "S"}
 LONG_BUCKETS = {"M", "L"}
 
 ORDER = ["breezyvoice", "omnivoice", "cosyvoice3", "voxcpm2", "moss", "qwen3tts", "chatterbox"]
-ZH_TW_NATIVE = {"breezyvoice"}
+ZH_TW_NATIVE = set()  # no country flags on the website (was {"breezyvoice"})
 NO_CONTROL = {"chatterbox", "qwen3tts"}
 ASRS = ["qwen3", "breeze"]
 
