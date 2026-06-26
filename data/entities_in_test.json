@@ -1,0 +1,767 @@
+[
+ {
+  "entity_id": "companies_intl:157",
+  "surface": "Visa",
+  "zh": "Visa",
+  "en": "Visa",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "payments"
+ },
+ {
+  "entity_id": "companies_intl:892",
+  "surface": "愛馬仕",
+  "zh": "愛馬仕",
+  "en": "Hermès",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "luxury"
+ },
+ {
+  "entity_id": "companies_intl:625",
+  "surface": "麥當勞",
+  "zh": "麥當勞",
+  "en": "McDonald's",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "food_chain"
+ },
+ {
+  "entity_id": "custom:10",
+  "surface": "張永儒",
+  "zh": "張永儒",
+  "en": "Yung-Ju Chang",
+  "region": "TW",
+  "type": "PER",
+  "domain": "professor"
+ },
+ {
+  "entity_id": "custom:1",
+  "surface": "交大資工",
+  "zh": "國立陽明交通大學資訊工程學系",
+  "en": "NYCU Department of Computer Science",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "university_dept"
+ },
+ {
+  "entity_id": "custom:2",
+  "surface": "AIMEX Lab",
+  "zh": "AIMEX Lab",
+  "en": "AIMEX Lab",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "research_lab"
+ },
+ {
+  "entity_id": "companies_intl:871",
+  "surface": "華盛頓郵報",
+  "zh": "華盛頓郵報",
+  "en": "The Washington Post",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "news"
+ },
+ {
+  "entity_id": "companies_intl:2",
+  "surface": "谷歌",
+  "zh": "谷歌",
+  "en": "Google",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "big_tech"
+ },
+ {
+  "entity_id": "companies_intl:69",
+  "surface": "Pinterest",
+  "zh": "Pinterest",
+  "en": "Pinterest",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "internet"
+ },
+ {
+  "entity_id": "companies_intl:293",
+  "surface": "保時捷",
+  "zh": "保時捷",
+  "en": "Porsche",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "automaker"
+ },
+ {
+  "entity_id": "people_intl:492",
+  "surface": "舒馬克",
+  "zh": "舒馬克",
+  "en": "Michael Schumacher",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "f1"
+ },
+ {
+  "entity_id": "companies_intl:316",
+  "surface": "奧斯頓馬丁",
+  "zh": "奧斯頓馬丁",
+  "en": "Aston Martin",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "automaker"
+ },
+ {
+  "entity_id": "people_intl:45",
+  "surface": "譚德塞",
+  "zh": "譚德塞",
+  "en": "Tedros Adhanom",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "international-org"
+ },
+ {
+  "entity_id": "companies_intl:773",
+  "surface": "世界衛生組織",
+  "zh": "世界衛生組織",
+  "en": "World Health Organization",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "global_health_org"
+ },
+ {
+  "entity_id": "people_intl:379",
+  "surface": "珍·古德",
+  "zh": "珍·古德",
+  "en": "Jane Goodall",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "biology"
+ },
+ {
+  "entity_id": "people_intl:328",
+  "surface": "陳福陽",
+  "zh": "陳福陽",
+  "en": "Hock Tan",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "tech-ceo"
+ },
+ {
+  "entity_id": "companies_intl:686",
+  "surface": "輝瑞",
+  "zh": "輝瑞",
+  "en": "Pfizer",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "pharma"
+ },
+ {
+  "entity_id": "companies_intl:18",
+  "surface": "美高森美",
+  "zh": "美高森美",
+  "en": "Microchip",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "semiconductor"
+ },
+ {
+  "entity_id": "companies_tw:313",
+  "surface": "立榮航空",
+  "zh": "立榮航空",
+  "en": "UNI Air",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "airline"
+ },
+ {
+  "entity_id": "companies_tw:46",
+  "surface": "鴻準",
+  "zh": "鴻準",
+  "en": "Foxconn Technology",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "ems_odm"
+ },
+ {
+  "entity_id": "companies_tw:113",
+  "surface": "合勤",
+  "zh": "合勤",
+  "en": "Zyxel",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "networking"
+ },
+ {
+  "entity_id": "people_tw:389",
+  "surface": "蔡康永",
+  "zh": "蔡康永",
+  "en": "Kevin Tsai",
+  "region": "TW",
+  "type": "PER",
+  "domain": "host"
+ },
+ {
+  "entity_id": "people_intl:917",
+  "surface": "玄彬",
+  "zh": "玄彬",
+  "en": "Hyun Bin",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "kdrama"
+ },
+ {
+  "entity_id": "people_intl:649",
+  "surface": "奉俊昊",
+  "zh": "奉俊昊",
+  "en": "Bong Joon-ho",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "director"
+ },
+ {
+  "entity_id": "people_intl:248",
+  "surface": "彼得·提爾",
+  "zh": "彼得·提爾",
+  "en": "Peter Thiel",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "tech-investor"
+ },
+ {
+  "entity_id": "companies_tw:13",
+  "surface": "力旺",
+  "zh": "力旺",
+  "en": "eMemory",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "ic_design"
+ },
+ {
+  "entity_id": "companies_tw:80",
+  "surface": "彩晶",
+  "zh": "彩晶",
+  "en": "Hannstar",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "panel"
+ },
+ {
+  "entity_id": "companies_tw:433",
+  "surface": "經濟部",
+  "zh": "經濟部",
+  "en": "Ministry of Economic Affairs",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "government"
+ },
+ {
+  "entity_id": "companies_tw:99",
+  "surface": "宏正",
+  "zh": "宏正",
+  "en": "ATEN",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "peripherals"
+ },
+ {
+  "entity_id": "companies_tw:233",
+  "surface": "宏益",
+  "zh": "宏益",
+  "en": "Hong Yi Fiber Industry",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "materials_fiber"
+ },
+ {
+  "entity_id": "companies_intl:138",
+  "surface": "歐特克",
+  "zh": "歐特克",
+  "en": "Autodesk",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "software"
+ },
+ {
+  "entity_id": "companies_intl:405",
+  "surface": "霍尼韋爾自動化",
+  "zh": "霍尼韋爾自動化",
+  "en": "Honeywell Automation",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "industrial-automation"
+ },
+ {
+  "entity_id": "companies_intl:739",
+  "surface": "麥肯森",
+  "zh": "麥肯森",
+  "en": "McKesson",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "healthcare_distribution"
+ },
+ {
+  "entity_id": "people_tw:49",
+  "surface": "林佳龍",
+  "zh": "林佳龍",
+  "en": "",
+  "region": "TW",
+  "type": "PER",
+  "domain": "mayor"
+ },
+ {
+  "entity_id": "companies_intl:935",
+  "surface": "新加坡航空",
+  "zh": "新加坡航空",
+  "en": "Singapore Airlines",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "airline"
+ },
+ {
+  "entity_id": "companies_intl:801",
+  "surface": "NTT DOCOMO",
+  "zh": "NTT DOCOMO",
+  "en": "NTT Docomo",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "telecom"
+ },
+ {
+  "entity_id": "companies_tw:214",
+  "surface": "凱基證券",
+  "zh": "凱基證券",
+  "en": "KGI Securities",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "securities"
+ },
+ {
+  "entity_id": "companies_intl:807",
+  "surface": "SK 電訊",
+  "zh": "SK電訊",
+  "en": "SK Telecom",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "telecom"
+ },
+ {
+  "entity_id": "companies_intl:273",
+  "surface": "瑞士寶盛",
+  "zh": "瑞士寶盛",
+  "en": "Julius Baer",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "bank"
+ },
+ {
+  "entity_id": "companies_intl:41",
+  "surface": "Workday",
+  "zh": "Workday",
+  "en": "Workday",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "software"
+ },
+ {
+  "entity_id": "companies_intl:375",
+  "surface": "艾默生",
+  "zh": "艾默生",
+  "en": "Emerson Electric",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "industrial-automation"
+ },
+ {
+  "entity_id": "companies_intl:709",
+  "surface": "邁蘭",
+  "zh": "邁蘭",
+  "en": "Mylan",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "pharma_generics"
+ },
+ {
+  "entity_id": "custom:13",
+  "surface": "林宏昀",
+  "zh": "林宏昀",
+  "en": "Hong-Yun Lin",
+  "region": "TW",
+  "type": "PER",
+  "domain": "researcher"
+ },
+ {
+  "entity_id": "custom:15",
+  "surface": "呂昊謙",
+  "zh": "呂昊謙",
+  "en": "Hao-Chien Lu",
+  "region": "TW",
+  "type": "PER",
+  "domain": "researcher"
+ },
+ {
+  "entity_id": "companies_intl:48",
+  "surface": "GitHub",
+  "zh": "GitHub",
+  "en": "GitHub",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "software"
+ },
+ {
+  "entity_id": "companies_tw:322",
+  "surface": "momo 購物網",
+  "zh": "momo購物網",
+  "en": "momo.com",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "internet/ecommerce"
+ },
+ {
+  "entity_id": "companies_intl:915",
+  "surface": "蔻馳",
+  "zh": "蔻馳",
+  "en": "Coach",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "luxury"
+ },
+ {
+  "entity_id": "companies_intl:581",
+  "surface": "花王",
+  "zh": "花王",
+  "en": "Kao",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "fmcg"
+ },
+ {
+  "entity_id": "companies_intl:570",
+  "surface": "百思買",
+  "zh": "百思買",
+  "en": "Best Buy",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "retail"
+ },
+ {
+  "entity_id": "companies_intl:904",
+  "surface": "萬寶龍",
+  "zh": "萬寶龍",
+  "en": "Montblanc",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "luxury"
+ },
+ {
+  "entity_id": "companies_intl:637",
+  "surface": "耐吉",
+  "zh": "耐吉",
+  "en": "Nike",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "apparel_sports"
+ },
+ {
+  "entity_id": "people_intl:289",
+  "surface": "馬雲",
+  "zh": "馬雲",
+  "en": "Jack Ma",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "tech-founder"
+ },
+ {
+  "entity_id": "companies_intl:113",
+  "surface": "思愛普",
+  "zh": "思愛普",
+  "en": "SAP",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "software"
+ },
+ {
+  "entity_id": "companies_intl:46",
+  "surface": "Slack",
+  "zh": "Slack",
+  "en": "Slack",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "software"
+ },
+ {
+  "entity_id": "people_tw:432",
+  "surface": "美式賣場",
+  "zh": "美式賣場",
+  "en": "",
+  "region": "TW",
+  "type": "PER",
+  "domain": "youtuber"
+ },
+ {
+  "entity_id": "companies_tw:257",
+  "surface": "SOGO 百貨",
+  "zh": "SOGO百貨",
+  "en": "Pacific SOGO",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "retail/department-store"
+ },
+ {
+  "entity_id": "companies_intl:583",
+  "surface": "妮維雅",
+  "zh": "妮維雅",
+  "en": "Nivea",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "fmcg"
+ },
+ {
+  "entity_id": "people_tw:365",
+  "surface": "藍正龍",
+  "zh": "藍正龍",
+  "en": "Blue Lan",
+  "region": "TW",
+  "type": "PER",
+  "domain": "actor"
+ },
+ {
+  "entity_id": "people_tw:231",
+  "surface": "張雨生",
+  "zh": "張雨生",
+  "en": "Tom Chang",
+  "region": "TW",
+  "type": "PER",
+  "domain": "rock_pop"
+ },
+ {
+  "entity_id": "companies_tw:129",
+  "surface": "台塑集團",
+  "zh": "台塑企業",
+  "en": "Formosa Plastics Group",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "conglomerate_petrochem"
+ },
+ {
+  "entity_id": "people_tw:144",
+  "surface": "王文淵",
+  "zh": "王文淵",
+  "en": "Wang Wen-yuan",
+  "region": "TW",
+  "type": "PER",
+  "domain": "petrochemical"
+ },
+ {
+  "entity_id": "companies_tw:236",
+  "surface": "正新",
+  "zh": "正新",
+  "en": "Cheng Shin Rubber",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "materials_tire"
+ },
+ {
+  "entity_id": "companies_tw:303",
+  "surface": "卜蜂",
+  "zh": "卜蜂",
+  "en": "Charoen Pokphand (Taiwan)",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "food/agribusiness"
+ },
+ {
+  "entity_id": "companies_intl:495",
+  "surface": "美國鋁業",
+  "zh": "美國鋁業",
+  "en": "Alcoa",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "mining"
+ },
+ {
+  "entity_id": "companies_intl:145",
+  "surface": "摩根大通",
+  "zh": "摩根大通",
+  "en": "JPMorgan Chase",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "bank"
+ },
+ {
+  "entity_id": "people_intl:254",
+  "surface": "勞埃德·布蘭克梵",
+  "zh": "勞埃德·布蘭克梵",
+  "en": "Lloyd Blankfein",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "finance-ceo"
+ },
+ {
+  "entity_id": "companies_intl:275",
+  "surface": "聯準會",
+  "zh": "聯邦準備理事會",
+  "en": "Federal Reserve",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "central_bank"
+ },
+ {
+  "entity_id": "companies_intl:78",
+  "surface": "三星",
+  "zh": "三星",
+  "en": "Samsung",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "asian_tech"
+ },
+ {
+  "entity_id": "companies_intl:11",
+  "surface": "超微",
+  "zh": "超微",
+  "en": "AMD",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "semiconductor"
+ },
+ {
+  "entity_id": "people_intl:497",
+  "surface": "菲爾普斯",
+  "zh": "菲爾普斯",
+  "en": "Michael Phelps",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "swimming"
+ },
+ {
+  "entity_id": "people_intl:430",
+  "surface": "內馬爾",
+  "zh": "內馬爾",
+  "en": "Neymar",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "soccer"
+ },
+ {
+  "entity_id": "people_intl:897",
+  "surface": "巴德·邦尼",
+  "zh": "巴德·邦尼",
+  "en": "Bad Bunny",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "music"
+ },
+ {
+  "entity_id": "people_intl:764",
+  "surface": "Red Velvet",
+  "zh": "Red Velvet",
+  "en": "Red Velvet",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "kpop"
+ },
+ {
+  "entity_id": "companies_intl:182",
+  "surface": "路透",
+  "zh": "路透",
+  "en": "Reuters",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "financial_data"
+ },
+ {
+  "entity_id": "people_intl:24",
+  "surface": "拉夫羅夫",
+  "zh": "拉夫羅夫",
+  "en": "Sergey Lavrov",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "russia-politics"
+ },
+ {
+  "entity_id": "companies_intl:449",
+  "surface": "盧克石油",
+  "zh": "盧克石油",
+  "en": "Lukoil",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "oil_gas"
+ },
+ {
+  "entity_id": "companies_intl:516",
+  "surface": "法國燃氣蘇伊士",
+  "zh": "法國燃氣蘇伊士",
+  "en": "Engie",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "utilities"
+ },
+ {
+  "entity_id": "people_intl:692",
+  "surface": "蕾哈娜",
+  "zh": "蕾哈娜",
+  "en": "Rihanna",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "pop"
+ },
+ {
+  "entity_id": "people_intl:759",
+  "surface": "少女時代",
+  "zh": "少女時代",
+  "en": "Girls' Generation",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "kpop"
+ },
+ {
+  "entity_id": "people_intl:230",
+  "surface": "黃仁勳",
+  "zh": "黃仁勳",
+  "en": "Jensen Huang",
+  "region": "INTL",
+  "type": "PER",
+  "domain": "tech-ceo"
+ },
+ {
+  "entity_id": "companies_tw:62",
+  "surface": "奇力新",
+  "zh": "奇力新",
+  "en": "Chilisin",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "components_passive"
+ },
+ {
+  "entity_id": "companies_tw:128",
+  "surface": "台塑化",
+  "zh": "台塑化",
+  "en": "Formosa Petrochemical",
+  "region": "TW",
+  "type": "ORG",
+  "domain": "petrochem_refining"
+ },
+ {
+  "entity_id": "companies_intl:254",
+  "surface": "永明金融",
+  "zh": "永明金融",
+  "en": "Sun Life",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "insurance"
+ },
+ {
+  "entity_id": "companies_intl:638",
+  "surface": "愛迪達",
+  "zh": "愛迪達",
+  "en": "Adidas",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "apparel_sports"
+ },
+ {
+  "entity_id": "companies_intl:572",
+  "surface": "迪卡儂",
+  "zh": "迪卡儂",
+  "en": "Decathlon",
+  "region": "INTL",
+  "type": "ORG",
+  "domain": "retail"
+ }
+]

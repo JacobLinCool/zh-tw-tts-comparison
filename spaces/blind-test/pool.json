@@ -1,0 +1,1053 @@
+{
+ "audio_dataset": "JacobLinCool/zh-tw-tts-comparison",
+ "models": [
+  "breezyvoice",
+  "omnivoice",
+  "cosyvoice3",
+  "voxcpm2",
+  "moss",
+  "qwen3tts",
+  "chatterbox"
+ ],
+ "sentences": [
+  {
+   "id": "ner-000437",
+   "text": "上週末的家庭聚會聊得超開心。表哥剛從美式賣場掃了一堆東西回來，姑姑則說她在 SOGO 百貨買到妮維雅的特價組合超划算。我們還一起追了藍正龍的新戲，順便聽了張雨生的老歌，整個下午都很放鬆。",
+   "bucket": "M",
+   "register": "日常對話",
+   "entities": [
+    "美式賣場",
+    "SOGO 百貨",
+    "妮維雅",
+    "藍正龍",
+    "張雨生"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-000437.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-000437.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-000437.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-000437.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-000437.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-000437.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-000437.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-001237",
+   "text": "今天的產業焦點，我們把目光放在幾家具代表性的台灣企業。台塑集團的王文淵長期帶領石化版圖，是業界相當受矚目的人物。同一時間，正新與卜蜂分別在輪胎與食品領域穩紮穩打，撐起傳統產業的半邊天。值得一提的是，美國鋁業近期也釋出與亞洲供應鏈加強合作的訊號，顯示原物料市場的連動性正在升溫。",
+   "bucket": "M",
+   "register": "新聞報導",
+   "entities": [
+    "台塑集團",
+    "王文淵",
+    "正新",
+    "卜蜂",
+    "美國鋁業"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-001237.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-001237.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-001237.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-001237.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-001237.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-001237.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-001237.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-001307",
+   "text": "今天的財經連線，我們先看美股這邊。摩根大通的執行長勞埃德·布蘭克梵在受訪時表示，聯準會的政策路徑仍存在高度不確定性；與此同時，三星與超微也相繼釋出對下半年半導體景氣的看法，市場普遍解讀為謹慎中帶著一絲樂觀。",
+   "bucket": "M",
+   "register": "新聞報導",
+   "entities": [
+    "摩根大通",
+    "勞埃德·布蘭克梵",
+    "聯準會",
+    "三星",
+    "超微"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-001307.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-001307.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-001307.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-001307.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-001307.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-001307.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-001307.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-001767",
+   "text": "歡迎回到節目，今天我們聊聊體育與娛樂的跨界。先說運動，菲爾普斯與內馬爾雖然來自完全不同的項目，卻都背負著國家的期待。再轉到音樂圈，巴德·邦尼用拉丁節奏席捲全球，而韓國的 Red Velvet 則靠著精緻的舞台，圈了一票死忠粉絲。這種跨界的能量，其實正在重新定義什麼叫做偶像。",
+   "bucket": "M",
+   "register": "訪談",
+   "entities": [
+    "菲爾普斯",
+    "內馬爾",
+    "巴德·邦尼",
+    "Red Velvet"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-001767.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-001767.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-001767.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-001767.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-001767.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-001767.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-001767.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-003602",
+   "text": "今天的國際要聞一次看。據路透報導，拉夫羅夫在最新一輪會談中表態審慎；能源方面，盧克石油與法國燃氣蘇伊士的合作案傳出新進展；娛樂版則有蕾哈娜與少女時代同台的消息，引爆社群討論熱潮。",
+   "bucket": "M",
+   "register": "新聞報導",
+   "entities": [
+    "路透",
+    "拉夫羅夫",
+    "盧克石油",
+    "法國燃氣蘇伊士",
+    "蕾哈娜",
+    "少女時代"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-003602.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-003602.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-003602.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-003602.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-003602.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-003602.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-003602.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-005385",
+   "text": "下午的科技訪談非常精彩。主持人先請黃仁勳談談 AI 算力的瓶頸，他講得深入淺出。接著話題轉到供應鏈，奇力新與台塑化的代表分別從被動元件和石化原料的角度補充，讓大家看到一台裝置背後牽動的產業有多廣。最後是國際視野，永明金融的分析師說明資金如何流向這些題材。",
+   "bucket": "M",
+   "register": "訪談",
+   "entities": [
+    "黃仁勳",
+    "奇力新",
+    "台塑化",
+    "永明金融"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-005385.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-005385.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-005385.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-005385.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-005385.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-005385.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-005385.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-006937",
+   "text": "說到運動品牌，愛迪達跟迪卡儂走的路線真的差很多。愛迪達主打的是潮流跟聯名，迪卡儂則是 CP 值取向，東西便宜又實用。我自己跑步的裝備幾乎都在迪卡儂買，但球鞋還是會挑愛迪達，畢竟穿起來比較有面子。",
+   "bucket": "M",
+   "register": "產品評論",
+   "entities": [
+    "愛迪達",
+    "迪卡儂",
+    "愛迪達",
+    "迪卡儂",
+    "迪卡儂",
+    "愛迪達"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-006937.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-006937.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-006937.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-006937.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-006937.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-006937.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-006937.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-001252",
+   "text": "我這禮拜先用 Visa 刷了愛馬仕的包當作生日禮物，週末再開車去麥當勞跟朋友吃個早餐聊聊天。",
+   "bucket": "S",
+   "register": "日常對話",
+   "entities": [
+    "Visa",
+    "愛馬仕",
+    "麥當勞"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-001252.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-001252.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-001252.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-001252.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-001252.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-001252.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-001252.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-002700",
+   "text": "華盛頓郵報報導指出，谷歌與 Pinterest 都在調整廣告投放的政策，希望兼顧使用者體驗與營收。",
+   "bucket": "S",
+   "register": "新聞報導",
+   "entities": [
+    "華盛頓郵報",
+    "谷歌",
+    "Pinterest"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-002700.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-002700.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-002700.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-002700.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-002700.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-002700.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-002700.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-003704",
+   "text": "這次保時捷車隊找來舒馬克當顧問，據說連奧斯頓馬丁的工程團隊都很想知道他們的調校策略。",
+   "bucket": "S",
+   "register": "訪談",
+   "entities": [
+    "保時捷",
+    "舒馬克",
+    "奧斯頓馬丁"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-003704.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-003704.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-003704.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-003704.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-003704.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-003704.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-003704.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-004030",
+   "text": "譚德塞當年在世界衛生組織的發言屢屢引發爭議，那段期間珍·古德反而持續用她的方式呼籲大家關注環境。",
+   "bucket": "S",
+   "register": "旁白敘述",
+   "entities": [
+    "譚德塞",
+    "世界衛生組織",
+    "珍·古德"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-004030.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-004030.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-004030.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-004030.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-004030.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-004030.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-004030.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-005184",
+   "text": "陳福陽帶領的團隊在半導體界相當有名，許多人把他和輝瑞、美高森美這類產業巨頭放在一起討論其領導風格。",
+   "bucket": "S",
+   "register": "旁白敘述",
+   "entities": [
+    "陳福陽",
+    "輝瑞",
+    "美高森美"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-005184.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-005184.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-005184.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-005184.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-005184.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-005184.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-005184.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-005307",
+   "text": "立榮航空宣布加開暑假期間飛往離島的班次，鴻準與合勤的員工旅遊團也都已經陸續完成訂位。",
+   "bucket": "S",
+   "register": "公司公告",
+   "entities": [
+    "立榮航空",
+    "鴻準",
+    "合勤"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-005307.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-005307.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-005307.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-005307.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-005307.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-005307.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-005307.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-005654",
+   "text": "蔡康永在訪談裡聊到玄彬的演技，還順便推薦了奉俊昊導演的幾部作品，整段對話讓人聽得很過癮。",
+   "bucket": "S",
+   "register": "訪談",
+   "entities": [
+    "蔡康永",
+    "玄彬",
+    "奉俊昊"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-005654.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-005654.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-005654.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-005654.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-005654.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-005654.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-005654.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-005692",
+   "text": "彼得·提爾在這場閉門座談裡談到，他長期看好半導體題材，並對力旺與彩晶這類台廠的智財布局相當有興趣。",
+   "bucket": "S",
+   "register": "訪談",
+   "entities": [
+    "彼得·提爾",
+    "力旺",
+    "彩晶"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-005692.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-005692.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-005692.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-005692.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-005692.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-005692.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-005692.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-005878",
+   "text": "經濟部今天說明，宏正和宏益這兩家廠商都已經通過了這一輪的補助審查，後續會陸續撥款。",
+   "bucket": "S",
+   "register": "公司公告",
+   "entities": [
+    "經濟部",
+    "宏正",
+    "宏益"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-005878.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-005878.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-005878.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-005878.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-005878.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-005878.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-005878.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-006453",
+   "text": "歐特克和霍尼韋爾自動化這幾年都在推工廠數位孿生，據說連麥肯森的顧問都跑去研究他們的整合方案。",
+   "bucket": "S",
+   "register": "講座",
+   "entities": [
+    "歐特克",
+    "霍尼韋爾自動化",
+    "麥肯森"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-006453.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-006453.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-006453.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-006453.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-006453.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-006453.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-006453.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-006570",
+   "text": "林佳龍出席記者會時提到，台灣會持續深化和新加坡航空、NTT DOCOMO 等國際企業的合作關係。",
+   "bucket": "S",
+   "register": "新聞報導",
+   "entities": [
+    "林佳龍",
+    "新加坡航空",
+    "NTT DOCOMO"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-006570.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-006570.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-006570.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-006570.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-006570.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-006570.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-006570.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-006625",
+   "text": "凱基證券的研究報告指出，SK 電訊在五 G 布局上動作積極，後續和瑞士寶盛的合作案也值得關注。",
+   "bucket": "S",
+   "register": "新聞報導",
+   "entities": [
+    "凱基證券",
+    "SK 電訊",
+    "瑞士寶盛"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-006625.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-006625.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-006625.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-006625.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-006625.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-006625.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-006625.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-006851",
+   "text": "公司最近導入 Workday 這套系統來管理人事資料，連艾默生跟邁蘭這種國際大廠都在用，據說可以省下不少行政成本。",
+   "bucket": "S",
+   "register": "公司公告",
+   "entities": [
+    "Workday",
+    "艾默生",
+    "邁蘭"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-006851.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-006851.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-006851.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-006851.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-006851.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-006851.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-006851.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-009081",
+   "text": "林宏昀跟呂昊謙最近合作一個口說評測的小專案，他們把實驗腳本放到 GitHub 上，方便彼此協作。",
+   "bucket": "S",
+   "register": "研究進度",
+   "entities": [
+    "林宏昀",
+    "呂昊謙",
+    "GitHub"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-009081.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-009081.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-009081.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-009081.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-009081.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-009081.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-009081.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-009749",
+   "text": "momo 購物網這次的年中慶折扣很驚人，我直接把蔻馳的包包跟花王的洗衣精一次補貨補滿。",
+   "bucket": "S",
+   "register": "日常對話",
+   "entities": [
+    "momo 購物網",
+    "蔻馳",
+    "花王"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-009749.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-009749.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-009749.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-009749.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-009749.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-009749.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-009749.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-009854",
+   "text": "這次去百思買逛了一圈，本來想買個萬寶龍的鋼筆送人，結果發現耐吉的限定款球鞋更吸引我。",
+   "bucket": "S",
+   "register": "社群貼文",
+   "entities": [
+    "百思買",
+    "萬寶龍",
+    "耐吉"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-009854.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-009854.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-009854.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-009854.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-009854.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-009854.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-009854.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-010281",
+   "text": "我跟你說喔，馬雲那場關於人工智慧的演講真的很精彩，他還特別提到思愛普跟 Slack 這類企業軟體未來的整合趨勢。",
+   "bucket": "S",
+   "register": "日常對話",
+   "entities": [
+    "馬雲",
+    "思愛普",
+    "Slack"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-010281.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-010281.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-010281.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-010281.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-010281.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-010281.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-010281.wav"
+    }
+   }
+  },
+  {
+   "id": "ner-002045",
+   "text": "張永儒老師在交大資工主持 AIMEX Lab。",
+   "bucket": "XS",
+   "register": "陳述句、介紹",
+   "entities": [
+    "張永儒",
+    "交大資工",
+    "AIMEX Lab"
+   ],
+   "clips": {
+    "breezyvoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/breezyvoice/ensub_ctrl/ner-002045.wav"
+    },
+    "omnivoice": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/omnivoice/ensub_ctrl/ner-002045.wav"
+    },
+    "cosyvoice3": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/cosyvoice3/ensub_ctrl/ner-002045.wav"
+    },
+    "voxcpm2": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/voxcpm2/ensub_ctrl/ner-002045.wav"
+    },
+    "moss": {
+     "condition": "ensub_ctrl",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/moss/ensub_ctrl/ner-002045.wav"
+    },
+    "qwen3tts": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/qwen3tts/ensub/ner-002045.wav"
+    },
+    "chatterbox": {
+     "condition": "ensub",
+     "url": "https://huggingface.co/datasets/JacobLinCool/zh-tw-tts-comparison/resolve/main/chatterbox/ensub/ner-002045.wav"
+    }
+   }
+  }
+ ]
+}

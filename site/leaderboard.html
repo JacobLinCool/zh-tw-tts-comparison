@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台灣中文 TTS — 人類偏好榜</title>
+<style>
+  :root { --bg:#0f1115; --card:#171a21; --line:#272b35; --fg:#e6e8ee; --mut:#9aa3b2; --acc:#6ea8fe; --good:#8bd4a0; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { position:sticky; top:0; z-index:5; background:#0f1115ee; backdrop-filter:blur(8px);
+           border-bottom:1px solid var(--line); padding:10px 16px; display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+  header h1 { font-size:16px; margin:0; }
+  header .sp { flex:1; }
+  header a { color:var(--acc); text-decoration:none; }
+  header a.cta { background:var(--acc); color:#0b1020; padding:4px 11px; border-radius:7px; font-weight:600; }
+  main { max-width:840px; margin:0 auto; padding:20px 16px 80px; }
+  .banner { border:1px solid var(--line); border-radius:10px; background:var(--card); padding:12px 16px; margin-bottom:18px; color:var(--mut); }
+  .banner b { color:var(--fg); }
+  .status { font-size:12.5px; color:var(--mut); margin-bottom:10px; }
+  table.rank { width:100%; border-collapse:collapse; }
+  table.rank th, table.rank td { padding:9px 10px; border-top:1px solid var(--line); text-align:left; vertical-align:middle; }
+  table.rank th { color:var(--mut); font-weight:600; font-size:12px; border-top:none; }
+  td.r { font-variant:tabular-nums; color:var(--mut); width:34px; }
+  td.name { font-weight:600; } td.name .tw::after { content:" \1F1F9\1F1FC"; }
+  td.num { font-variant:tabular-nums; text-align:right; white-space:nowrap; }
+  .bar { position:relative; background:#0d0f13; border:1px solid var(--line); border-radius:6px; height:22px; min-width:150px; }
+  .bar > i { position:absolute; top:0; bottom:0; left:0; background:linear-gradient(90deg,#3a527e,#6ea8fe); border-radius:5px; }
+  .bar > span { position:absolute; right:6px; top:0; line-height:22px; font-size:12px; font-variant:tabular-nums; }
+  .ci { font-size:11px; color:var(--mut); font-variant:tabular-nums; }
+  tr.top i { background:linear-gradient(90deg,#3f7a52,#8bd4a0); }
+  h2 { font-size:15px; margin:26px 0 8px; }
+  table.mtx { border-collapse:collapse; font-size:11px; font-variant:tabular-nums; }
+  table.mtx th, table.mtx td { border:1px solid var(--line); padding:3px 6px; text-align:center; }
+  table.mtx th { color:var(--mut); font-weight:600; }
+  table.mtx td.self { background:#0d0f13; color:#444; }
+  .lo { color:#e08b8b; } .hi2 { color:#8bd4a0; }
+  button { background:#222733; border:1px solid var(--line); color:var(--fg); border-radius:7px; padding:6px 12px; cursor:pointer; }
+  button:hover { border-color:var(--acc); }
+</style>
+</head>
+<body>
+<header>
+  <h1>人類偏好榜</h1>
+  <a href="index.html">← 試聽總覽</a>
+  <a href="results.html">結果報告</a>
+  <span class="sp"></span>
+  <button id="refresh">↻ 重新整理</button>
+  <a class="cta" id="spacelink" target="_blank" rel="noopener">🎧 去投票</a>
+</header>
+<main>
+  <div class="banner">
+    這是<b>盲測偏好榜</b>：每張票是一次「同一句、兩個系統」的 A/B 比較，用 <b>Bradley-Terry</b> 模型把所有票換算成
+    各系統的「偏好強度」。票數還少時結果為<b>初步</b>——CI（95% 區間）重疊代表還分不出高下。
+    想讓榜更準，就到 <a id="spacelink2" target="_blank" rel="noopener">盲測平台</a> 多投幾票。
+  </div>
+  <div class="status" id="status">載入中…</div>
+  <table class="rank"><thead><tr>
+    <th class="r">#</th><th>系統</th><th>偏好強度（Bradley-Terry）</th><th class="num">95% CI</th>
+    <th class="num">對戰</th><th class="num">勝率</th>
+  </tr></thead><tbody id="rows"></tbody></table>
+
+  <h2>對戰次數矩陣（列 vs 欄）</h2>
+  <div id="matrix"></div>
+</main>
+
+<script>
+const VOTES_DATASET = "JacobLinCool/zh-tw-tts-arena-votes";
+const SPACE_URL = "https://huggingface.co/spaces/JacobLinCool/zh-tw-tts-arena";
+const MODEL_ORDER = ["breezyvoice","omnivoice","cosyvoice3","voxcpm2","moss","qwen3tts","chatterbox"];
+const TW = new Set(["breezyvoice"]);
+const PRIOR = 0.1;          // virtual games per ordered pair (keeps BT stable / connected)
+const POLL_MS = 45000;
+document.getElementById('spacelink').href = SPACE_URL;
+document.getElementById('spacelink2').href = SPACE_URL;
+
+function esc(s){ return String(s==null?'':s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+// ---- fetch all votes from the HF dataset-viewer /rows API (CORS-enabled, public) ----
+const DS_API = 'https://datasets-server.huggingface.co';
+
+async function discoverSplit() {
+  // ask the viewer which config/split exists (robust to naming); fall back to default/train
+  try {
+    const r = await fetch(DS_API + '/splits?dataset=' + encodeURIComponent(VOTES_DATASET));
+    if (r.ok) {
+      const s = (await r.json()).splits || [];
+      if (s.length) return { config: s[0].config, split: s[0].split };
+    }
+  } catch (e) { /* fall through */ }
+  return { config: 'default', split: 'train' };
+}
+
+async function fetchVotes() {
+  if (location.search.includes('mock')) return mockVotes();
+  const { config, split } = await discoverSplit();
+  const base = DS_API + '/rows?dataset=' + encodeURIComponent(VOTES_DATASET) +
+    '&config=' + encodeURIComponent(config) + '&split=' + encodeURIComponent(split);
+  let rows = [], offset = 0, total = Infinity;
+  while (offset < total && offset < 30000) {
+    const r = await fetch(base + '&offset=' + offset + '&length=100');
+    if (!r.ok) { if (offset === 0) throw new Error('rows ' + r.status); break; }
+    const d = await r.json();
+    total = (d.num_rows_total != null) ? d.num_rows_total : rows.length;
+    const got = (d.rows || []).map(x => x.row);
+    rows.push(...got);
+    if (!got.length) break;
+    offset += 100;
+  }
+  return rows;
+}
+
+// ---- Bradley-Terry via MM iteration (order-independent), ties = 0.5 each ----
+function bradleyTerry(votes) {
+  const models = MODEL_ORDER.slice();
+  const idx = new Map(models.map((m,i)=>[m,i]));
+  const n = models.length;
+  const beat = Array.from({length:n},()=>new Array(n).fill(0));   // beat[i][j] = i beat j
+  for (let i=0;i<n;i++) for (let j=0;j<n;j++) if (i!==j) beat[i][j] += PRIOR;
+  for (const v of votes) {
+    const i = idx.get(v.model_a), j = idx.get(v.model_b);
+    if (i==null || j==null || i===j) continue;
+    if (v.winner === 'a') beat[i][j] += 1;
+    else if (v.winner === 'b') beat[j][i] += 1;
+    else { beat[i][j] += 0.5; beat[j][i] += 0.5; }   // tie
+  }
+  const W = new Array(n).fill(0), games = Array.from({length:n},()=>new Array(n).fill(0));
+  for (let i=0;i<n;i++) for (let j=0;j<n;j++) if (i!==j) { W[i]+=beat[i][j]; games[i][j]=beat[i][j]+beat[j][i]; }
+  let p = new Array(n).fill(1);
+  for (let it=0; it<200; it++) {
+    const np = new Array(n).fill(0);
+    for (let i=0;i<n;i++) {
+      let denom = 0;
+      for (let j=0;j<n;j++) if (i!==j) denom += games[i][j] / (p[i]+p[j]);
+      np[i] = denom > 0 ? W[i]/denom : p[i];
+    }
+    let s = np.reduce((a,b)=>a+b,0) || 1;
+    for (let i=0;i<n;i++) p[i] = np[i]/s;
+  }
+  return { models, p, beat, games, W };
+}
+
+function strengths(votes) {
+  const bt = bradleyTerry(votes);
+  return bt;
+}
+
+// percentile bootstrap CI for the strength of each model
+function bootstrapCI(votes, B) {
+  const n = MODEL_ORDER.length;
+  if (!votes.length) return MODEL_ORDER.map(()=>[0,0]);
+  const samples = Array.from({length:n},()=>[]);
+  for (let b=0;b<B;b++) {
+    const res = new Array(votes.length);
+    for (let k=0;k<votes.length;k++) res[k] = votes[(Math.random()*votes.length)|0];
+    const p = bradleyTerry(res).p;
+    for (let i=0;i<n;i++) samples[i].push(p[i]);
+  }
+  return samples.map(arr => {
+    arr.sort((a,b)=>a-b);
+    const q = (f)=>arr[Math.min(arr.length-1, Math.max(0, Math.floor(f*(arr.length-1))))];
+    return [q(0.025), q(0.975)];
+  });
+}
+
+function render(votes) {
+  const status = document.getElementById('status');
+  const bt = strengths(votes);
+  const N = votes.length;
+  const B = N > 4000 ? 60 : 200;
+  const ci = N ? bootstrapCI(votes, B) : MODEL_ORDER.map(()=>[0,0]);
+
+  const rowsData = bt.models.map((m,i) => {
+    const wins = bt.W[i], gms = bt.models.reduce((a,_,j)=> i===j?a:a+bt.games[i][j], 0);
+    // subtract the symmetric PRIOR mass so "games"/"winrate" reflect real votes
+    const realGames = Math.max(0, gms - PRIOR*2*(bt.models.length-1));
+    const realWins = Math.max(0, wins - PRIOR*(bt.models.length-1));
+    return { m, p: bt.p[i], lo: ci[i][0], hi: ci[i][1],
+             games: realGames, winrate: realGames>0 ? realWins/realGames : null };
+  }).sort((a,b)=> b.p - a.p);
+
+  const maxP = Math.max(...rowsData.map(r=>r.p), 1e-9);
+  // a model is "tied for #1" if its CI overlaps the leader's CI
+  const lead = rowsData[0];
+  const tb = document.getElementById('rows');
+  tb.innerHTML = rowsData.map((r, rank) => {
+    const tied = r.hi >= lead.lo;     // CI overlaps leader -> not separable
+    const pct = (r.p*100).toFixed(1);
+    return '<tr class="'+(rank===0?'top':'')+'">'
+      + '<td class="r">'+(rank+1)+'</td>'
+      + '<td class="name"><span class="'+(TW.has(r.m)?'tw':'')+'">'+esc(r.m)+'</span>'+(tied&&rank>0?'':'')+'</td>'
+      + '<td><div class="bar"><i style="width:'+(100*r.p/maxP).toFixed(1)+'%"></i><span>'+pct+'%</span></div></td>'
+      + '<td class="num ci">'+(r.games>0?(r.lo*100).toFixed(1)+'–'+(r.hi*100).toFixed(1):'–')+'</td>'
+      + '<td class="num">'+Math.round(r.games)+'</td>'
+      + '<td class="num">'+(r.winrate==null?'–':(r.winrate*100).toFixed(0)+'%')+'</td>'
+      + '</tr>';
+  }).join('');
+
+  // matrix of real comparison counts
+  const ms = bt.models;
+  let mh = '<table class="mtx"><tr><th></th>'+ms.map(m=>'<th>'+esc(m.slice(0,5))+'</th>').join('')+'</tr>';
+  for (let i=0;i<ms.length;i++) {
+    mh += '<tr><th>'+esc(ms[i])+'</th>';
+    for (let j=0;j<ms.length;j++) {
+      if (i===j) { mh += '<td class="self">–</td>'; continue; }
+      const real = bt.beat[i][j] - PRIOR;   // times i beat j (real)
+      mh += '<td>'+(real>0?real.toFixed(real%1?1:0):'0')+'</td>';
+    }
+    mh += '</tr>';
+  }
+  document.getElementById('matrix').innerHTML = mh + '</table>'
+    + '<div class="status" style="margin-top:6px">格子 (列 i, 欄 j) = i 勝過 j 的票數（平手各算 0.5）。</div>';
+
+  const sep = rowsData.filter((r,k)=> k>0 && r.hi < lead.lo).length;
+  status.innerHTML = '共 <b style="color:var(--fg)">'+N+'</b> 票'
+    + (N===0 ? '：還沒有票，<a href="'+SPACE_URL+'" target="_blank" rel="noopener">先去投幾票</a>吧。'
+       : '　·　目前領先：<b style="color:var(--good)">'+esc(lead.m)+'</b>'
+         + (sep===0 ? '（前段仍在誤差內，尚無法宣告冠軍）' : '（已與第 '+(rowsData.length-sep+1)+' 名後拉開）'))
+    + '　·　每 '+Math.round(POLL_MS/1000)+' 秒自動更新';
+}
+
+function mockVotes() {
+  // synthetic votes for local preview: latent quality -> probabilistic winners
+  const q = {cosyvoice3:0.9, omnivoice:0.85, voxcpm2:0.8, moss:0.7, qwen3tts:0.65, chatterbox:0.4, breezyvoice:0.35};
+  const ms = MODEL_ORDER, out = [];
+  for (let k=0;k<600;k++) {
+    let a = ms[(Math.random()*ms.length)|0], b = ms[(Math.random()*ms.length)|0];
+    if (a===b) { k--; continue; }
+    const pa = q[a]/(q[a]+q[b]);
+    const rnd = Math.random();
+    out.push({ model_a:a, model_b:b, winner: rnd < pa*0.92 ? 'a' : (rnd < pa*0.92+0.08 ? 'tie':'b') });
+  }
+  return out;
+}
+
+async function refresh() {
+  const status = document.getElementById('status');
+  try {
+    const votes = await fetchVotes();
+    render(votes);
+  } catch (e) {
+    status.innerHTML = '資料收集中或暫時讀不到（'+esc(e.message)+'）。'
+      + '盲測平台開始收到票後這裡就會出現排名。';
+    render([]);
+  }
+}
+
+document.getElementById('refresh').addEventListener('click', refresh);
+refresh();
+setInterval(refresh, POLL_MS);
+</script>
+</body>
+</html>

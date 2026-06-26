@@ -1,0 +1,668 @@
+[
+  {
+    "id": "ner-005307",
+    "ref_text": "立榮航空宣布加開暑假期間飛往離島的班次，鴻準與合勤的員工旅遊團也都已經陸續完成訂位。",
+    "entities": [
+      {
+        "surface": "立榮航空",
+        "zh": "立榮航空",
+        "en": "UNI Air",
+        "pinyin": "lì róng háng kōng",
+        "zhuyin": "ㄌㄧˋ ㄖㄨㄥˊ ㄏㄤˊ ㄎㄨㄥ"
+      },
+      {
+        "surface": "鴻準",
+        "zh": "鴻準",
+        "en": "Foxconn Technology",
+        "pinyin": "hóng zhǔn",
+        "zhuyin": "ㄏㄨㄥˊ ㄓㄨㄣˇ"
+      },
+      {
+        "surface": "合勤",
+        "zh": "合勤",
+        "en": "Zyxel",
+        "pinyin": "hé qín",
+        "zhuyin": "ㄏㄜˊ ㄑㄧㄣˊ"
+      }
+    ],
+    "raw_input": "立榮航空宣布加開暑假期間飛往離島的班次，鴻準與合勤的員工旅遊團也都已經陸續完成訂位。",
+    "raw_asr_qwen": "丽融航空宣布加开暑假期间飞往离岛的班次，张准与何晴的员工旅游团也都已经陆续完成定位。",
+    "raw_asr_breeze": "立榮航空宣布加開暑假期間飛往離島的班次張準與何晴的員工旅遊團也都已經陸續完成訂位",
+    "raw_mer_breeze": 0.075,
+    "ctrl_input": "[l][ì][r][óng][h][áng][k][ōng]宣布加開暑假期間飛往離島的班次，[h][óng][zh][ǔn]與[h][é][q][ín]的員工旅遊團也都已經陸續完成訂位。",
+    "ctrl_asr_qwen": "利荣航空宣布加开暑假期间飞往离岛的班次，红尊与和勤的员工旅游团也都已经陆续完成定位。",
+    "ctrl_asr_breeze": "利融航空宣布加開暑假期間飛往離島的班次洪尊與和琴的員工旅遊團也都已經陸續完成訂位",
+    "ctrl_mer_breeze": 0.15,
+    "ctrl_error": null,
+    "delta": 0.075
+  },
+  {
+    "id": "ner-002045",
+    "ref_text": "張永儒老師在交大資工主持 AIMEX Lab。",
+    "entities": [
+      {
+        "surface": "張永儒",
+        "zh": "張永儒",
+        "en": "Yung-Ju Chang",
+        "pinyin": "zhāng yǒng rú",
+        "zhuyin": "ㄓㄤ ㄩㄥˇ ㄖㄨˊ"
+      },
+      {
+        "surface": "交大資工",
+        "zh": "國立陽明交通大學資訊工程學系",
+        "en": "NYCU Department of Computer Science",
+        "pinyin": "guó lì yáng míng jiāo tōng dà xué zī xùn gōng chéng xué xì",
+        "zhuyin": "ㄍㄨㄛˊ ㄌㄧˋ ㄧㄤˊ ㄇㄧㄥˊ ㄐㄧㄠ ㄊㄨㄥ ㄉㄚˋ ㄒㄩㄝˊ ㄗ ㄒㄩㄣˋ ㄍㄨㄥ ㄔㄥˊ ㄒㄩㄝˊ ㄒㄧˋ"
+      },
+      {
+        "surface": "AIMEX Lab",
+        "zh": "AIMEX Lab",
+        "en": "AIMEX Lab",
+        "pinyin": "",
+        "zhuyin": ""
+      }
+    ],
+    "raw_input": "張永儒老師在交大資工主持 AIMEX Lab。",
+    "raw_asr_qwen": "张永如老师在交大自贡主持 Amex Lab。",
+    "raw_asr_breeze": "張詠儒老師在交大志工主持 Amex Lab",
+    "raw_mer_breeze": 0.21428571428571427,
+    "ctrl_input": "[zh][āng][y][ǒng][r][ú]老師在[j][iāo][d][à][z][ī][g][ōng]主持 AIMEX Lab。",
+    "ctrl_asr_qwen": "张永儒老师在交大自工主持A Max Lab。",
+    "ctrl_asr_breeze": "張詠茹老師在交大志工主持 AMAX Lab",
+    "ctrl_mer_breeze": 0.2857142857142857,
+    "ctrl_error": null,
+    "delta": 0.07142857142857142
+  },
+  {
+    "id": "ner-005692",
+    "ref_text": "彼得·提爾在這場閉門座談裡談到，他長期看好半導體題材，並對力旺與彩晶這類台廠的智財布局相當有興趣。",
+    "entities": [
+      {
+        "surface": "彼得·提爾",
+        "zh": "彼得·提爾",
+        "en": "Peter Thiel",
+        "pinyin": "bǐ dé tí ěr",
+        "zhuyin": "ㄅㄧˇ ㄉㄜˊ ㄊㄧˊ ㄦˇ"
+      },
+      {
+        "surface": "力旺",
+        "zh": "力旺",
+        "en": "eMemory",
+        "pinyin": "lì wàng",
+        "zhuyin": "ㄌㄧˋ ㄨㄤˋ"
+      },
+      {
+        "surface": "彩晶",
+        "zh": "彩晶",
+        "en": "Hannstar",
+        "pinyin": "cǎi jīng",
+        "zhuyin": "ㄘㄞˇ ㄐㄧㄥ"
+      }
+    ],
+    "raw_input": "彼得·提爾在這場閉門座談裡談到，他長期看好半導體題材，並對力旺與彩晶這類台廠的智財布局相當有興趣。",
+    "raw_asr_qwen": "彼得提尔在这场闭门座谈里谈到，他长期看好半导体题材，并对力望与财经这擂台场的自采布局相当有兴趣。",
+    "raw_asr_breeze": "彼得提爾在這場閉門座談裡談到他長期看好半導體題材並對力旺與彩晶這類台廠的制裁佈局相當有興趣",
+    "raw_mer_breeze": 0.044444444444444446,
+    "ctrl_input": "[b][ǐ][d][é]·[t][í][ěr]在這場閉門座談裡談到，他長期看好半導體題材，並對[l][ì][w][àng]與[c][ǎi][j][īng]這類台廠的智財布局相當有興趣。",
+    "ctrl_asr_qwen": "彼得提尔在这场闭门座谈里谈到，他长期看好半导体题材，并对力旺与财金这类台厂的制裁布局相当有兴趣。",
+    "ctrl_asr_breeze": "彼得提爾在這場閉門座談裡談到他長期看好半導體題材並對力望與財經這類台廠的制裁佈局相當有興趣",
+    "ctrl_mer_breeze": 0.1111111111111111,
+    "ctrl_error": null,
+    "delta": 0.06666666666666665
+  },
+  {
+    "id": "ner-009854",
+    "ref_text": "這次去百思買逛了一圈，本來想買個萬寶龍的鋼筆送人，結果發現耐吉的限定款球鞋更吸引我。",
+    "entities": [
+      {
+        "surface": "百思買",
+        "zh": "百思買",
+        "en": "Best Buy",
+        "pinyin": "bǎi sī mǎi",
+        "zhuyin": "ㄅㄞˇ ㄙ ㄇㄞˇ"
+      },
+      {
+        "surface": "萬寶龍",
+        "zh": "萬寶龍",
+        "en": "Montblanc",
+        "pinyin": "wàn bǎo lóng",
+        "zhuyin": "ㄨㄢˋ ㄅㄠˇ ㄌㄨㄥˊ"
+      },
+      {
+        "surface": "耐吉",
+        "zh": "耐吉",
+        "en": "Nike",
+        "pinyin": "nài jí",
+        "zhuyin": "ㄋㄞˋ ㄐㄧˊ"
+      }
+    ],
+    "raw_input": "這次去百思買逛了一圈，本來想買個萬寶龍的鋼筆送人，結果發現耐吉的限定款球鞋更吸引我。",
+    "raw_asr_qwen": "只是去百时买逛了一圈，本来想买个万宝龙的钢笔送人，结果发现耐吉的限定款球鞋更吸引我。",
+    "raw_asr_breeze": "這次去百史買逛了一圈本來想買個萬寶龍的鋼筆送人結果發現耐吉的限定款球鞋更吸引我",
+    "raw_mer_breeze": 0.02564102564102564,
+    "ctrl_input": "這次去[b][ǎi][s][ī][m][ǎi]逛了一圈，本來想買個[w][àn][b][ǎo][l][óng]的鋼筆送人，結果發現[n][ài][j][í]的限定款球鞋更吸引我。",
+    "ctrl_asr_qwen": "这次去百思买逛了一圈，本来想买个万宝龙的钢笔送人，结果发现耐吉的限定款球鞋更吸引我。",
+    "ctrl_asr_breeze": "這次去百事賣逛了一圈本來想買個萬寶龍的鋼筆送人結果發現耐吉的限定款球鞋更吸引我",
+    "ctrl_mer_breeze": 0.05128205128205128,
+    "ctrl_error": null,
+    "delta": 0.02564102564102564
+  },
+  {
+    "id": "ner-006625",
+    "ref_text": "凱基證券的研究報告指出，SK 電訊在五 G 布局上動作積極，後續和瑞士寶盛的合作案也值得關注。",
+    "entities": [
+      {
+        "surface": "凱基證券",
+        "zh": "凱基證券",
+        "en": "KGI Securities",
+        "pinyin": "kǎi jī zhèng quàn",
+        "zhuyin": "ㄎㄞˇ ㄐㄧ ㄓㄥˋ ㄑㄩㄢˋ"
+      },
+      {
+        "surface": "SK 電訊",
+        "zh": "SK電訊",
+        "en": "SK Telecom",
+        "pinyin": "diàn xùn",
+        "zhuyin": "ㄉㄧㄢˋ ㄒㄩㄣˋ"
+      },
+      {
+        "surface": "瑞士寶盛",
+        "zh": "瑞士寶盛",
+        "en": "Julius Baer",
+        "pinyin": "ruì shì bǎo shèng",
+        "zhuyin": "ㄖㄨㄟˋ ㄕˋ ㄅㄠˇ ㄕㄥˋ"
+      }
+    ],
+    "raw_input": "凱基證券的研究報告指出，SK 電訊在五 G 布局上動作積極，後續和瑞士寶盛的合作案也值得關注。",
+    "raw_asr_qwen": "凯基证券的研究报告指出，SK电讯在五G布局上动作积极，后续和瑞士宝盛的合作案也值得关注。",
+    "raw_asr_breeze": "凱吉證券的研究報告指出SK電訊在 5G 佈局上動作積極後續和瑞士寶盛的合作案也值得關注",
+    "raw_mer_breeze": 0.075,
+    "ctrl_input": "[k][ǎi][j][ī][zh][èng][q][uàn]的研究報告指出，SK [d][iàn][x][ùn]在五 G 布局上動作積極，後續和[r][uì][sh][ì][b][ǎo][sh][èng]的合作案也值得關注。",
+    "ctrl_asr_qwen": "凯基证券的研究报告指出，SK电讯在5G布局上动作积极，后续和瑞士宝盛的合作案也值得关注。",
+    "ctrl_asr_breeze": "凱基證券的研究報告指出SK電訊在 5G 佈局上動作積極後續和瑞士保生的合作案也值得關注",
+    "ctrl_mer_breeze": 0.1,
+    "ctrl_error": null,
+    "delta": 0.02500000000000001
+  },
+  {
+    "id": "ner-003704",
+    "ref_text": "這次保時捷車隊找來舒馬克當顧問，據說連奧斯頓馬丁的工程團隊都很想知道他們的調校策略。",
+    "entities": [
+      {
+        "surface": "保時捷",
+        "zh": "保時捷",
+        "en": "Porsche",
+        "pinyin": "bǎo shí jié",
+        "zhuyin": "ㄅㄠˇ ㄕˊ ㄐㄧㄝˊ"
+      },
+      {
+        "surface": "舒馬克",
+        "zh": "舒馬克",
+        "en": "Michael Schumacher",
+        "pinyin": "shū mǎ kè",
+        "zhuyin": "ㄕㄨ ㄇㄚˇ ㄎㄜˋ"
+      },
+      {
+        "surface": "奧斯頓馬丁",
+        "zh": "奧斯頓馬丁",
+        "en": "Aston Martin",
+        "pinyin": "ào sī dùn mǎ dīng",
+        "zhuyin": "ㄠˋ ㄙ ㄉㄨㄣˋ ㄇㄚˇ ㄉㄧㄥ"
+      }
+    ],
+    "raw_input": "這次保時捷車隊找來舒馬克當顧問，據說連奧斯頓馬丁的工程團隊都很想知道他們的調校策略。",
+    "raw_asr_qwen": "这次保时捷车队找来舒马克当顾问，据说连奥斯顿马丁的工程团队都很想知道他们的调校策略。",
+    "raw_asr_breeze": "這次保時捷車隊找來蘇馬克當顧問據說連奧斯特馬丁的工程團隊都很想知道他們的調校策略",
+    "raw_mer_breeze": 0.05,
+    "ctrl_input": "這次[b][ǎo][sh][í][j][ié]車隊找來[sh][ū][m][ǎ][k][è]當顧問，據說連[ào][s][ī][d][ùn][m][ǎ][d][īng]的工程團隊都很想知道他們的調校策略。",
+    "ctrl_asr_qwen": "这是保时捷车队找来舒马克当顾问，据说连奥斯特马丁的工程团队都很想知道他们的调校策略。",
+    "ctrl_asr_breeze": "這是保時捷車隊找來蘇馬克當顧問據說連奧斯特馬丁的工程團隊都很想知道他們的調校策略",
+    "ctrl_mer_breeze": 0.075,
+    "ctrl_error": null,
+    "delta": 0.024999999999999994
+  },
+  {
+    "id": "ner-010281",
+    "ref_text": "我跟你說喔，馬雲那場關於人工智慧的演講真的很精彩，他還特別提到思愛普跟 Slack 這類企業軟體未來的整合趨勢。",
+    "entities": [
+      {
+        "surface": "馬雲",
+        "zh": "馬雲",
+        "en": "Jack Ma",
+        "pinyin": "mǎ yún",
+        "zhuyin": "ㄇㄚˇ ㄩㄣˊ"
+      },
+      {
+        "surface": "思愛普",
+        "zh": "思愛普",
+        "en": "SAP",
+        "pinyin": "sī ài pǔ",
+        "zhuyin": "ㄙ ㄞˋ ㄆㄨˇ"
+      },
+      {
+        "surface": "Slack",
+        "zh": "Slack",
+        "en": "Slack",
+        "pinyin": "",
+        "zhuyin": ""
+      }
+    ],
+    "raw_input": "我跟你說喔，馬雲那場關於人工智慧的演講真的很精彩，他還特別提到思愛普跟 Slack 這類企業軟體未來的整合趨勢。",
+    "raw_asr_qwen": "我跟你说，我马云那场关于人工智能的演讲真的很精彩。他还特别提到思爱普跟 Slack 这类企业软体未来的整合趋势。",
+    "raw_asr_breeze": "我跟你說喔馬雲那場關於人工智慧的演講真的很精彩他還特別提到 Skype 跟 Slack這類企業軟體未來的整合趨勢",
+    "raw_mer_breeze": 0.06382978723404255,
+    "ctrl_input": "我跟你說喔，[m][ǎ][y][ún]那場關於人工智慧的演講真的很精彩，他還特別提到[s][ī][ài][p][ǔ]跟 Slack 這類企業軟體未來的整合趨勢。",
+    "ctrl_asr_qwen": "我跟你说，马云那场关于人工智能的演讲真的很精彩。他还特别提到，是Apple跟Slack这类企业软体未来的整合趋势。",
+    "ctrl_asr_breeze": "我跟你說馬雲那場關於人工智慧的演講真的很精彩他還特別提到 Skype 跟 Slack 這類企業軟體未來的整合趨勢",
+    "ctrl_mer_breeze": 0.0851063829787234,
+    "ctrl_error": null,
+    "delta": 0.021276595744680854
+  },
+  {
+    "id": "ner-001252",
+    "ref_text": "我這禮拜先用 Visa 刷了愛馬仕的包當作生日禮物，週末再開車去麥當勞跟朋友吃個早餐聊聊天。",
+    "entities": [
+      {
+        "surface": "Visa",
+        "zh": "Visa",
+        "en": "Visa",
+        "pinyin": "",
+        "zhuyin": ""
+      },
+      {
+        "surface": "愛馬仕",
+        "zh": "愛馬仕",
+        "en": "Hermès",
+        "pinyin": "ài mǎ shì",
+        "zhuyin": "ㄞˋ ㄇㄚˇ ㄕˋ"
+      },
+      {
+        "surface": "麥當勞",
+        "zh": "麥當勞",
+        "en": "McDonald's",
+        "pinyin": "mài dāng láo",
+        "zhuyin": "ㄇㄞˋ ㄉㄤ ㄌㄠˊ"
+      }
+    ],
+    "raw_input": "我這禮拜先用 Visa 刷了愛馬仕的包當作生日禮物，週末再開車去麥當勞跟朋友吃個早餐聊聊天。",
+    "raw_asr_qwen": "我这礼拜先用Visa刷了爱马仕的包当做生日礼物，周末再开车去麦当劳跟朋友吃个早餐聊聊天。",
+    "raw_asr_breeze": "我這禮拜先用 Visa 刷了愛馬仕的包當作生日禮物週末再開車去麥當勞跟朋友吃個早餐聊聊天",
+    "raw_mer_breeze": 0.0,
+    "ctrl_input": "我這禮拜先用 Visa 刷了[ài][m][ǎ][sh][ì]的包當作生日禮物，週末再開車去[m][ài][d][āng][l][áo]跟朋友吃個早餐聊聊天。",
+    "ctrl_asr_qwen": "我这礼拜先用Visa刷了爱马仕的包当做生日礼物，周末再开车去麦当劳跟朋友吃个早餐聊聊天。",
+    "ctrl_asr_breeze": "我這禮拜先用 Visa 刷了愛馬仕的包當作生日禮物週末再開車去麥當勞跟朋友吃個早餐聊聊天",
+    "ctrl_mer_breeze": 0.0,
+    "ctrl_error": null,
+    "delta": 0.0
+  },
+  {
+    "id": "ner-002700",
+    "ref_text": "華盛頓郵報報導指出，谷歌與 Pinterest 都在調整廣告投放的政策，希望兼顧使用者體驗與營收。",
+    "entities": [
+      {
+        "surface": "華盛頓郵報",
+        "zh": "華盛頓郵報",
+        "en": "The Washington Post",
+        "pinyin": "huá shèng dùn yóu bào",
+        "zhuyin": "ㄏㄨㄚˊ ㄕㄥˋ ㄉㄨㄣˋ ㄧㄡˊ ㄅㄠˋ"
+      },
+      {
+        "surface": "谷歌",
+        "zh": "谷歌",
+        "en": "Google",
+        "pinyin": "gǔ gē",
+        "zhuyin": "ㄍㄨˇ ㄍㄜ"
+      },
+      {
+        "surface": "Pinterest",
+        "zh": "Pinterest",
+        "en": "Pinterest",
+        "pinyin": "",
+        "zhuyin": ""
+      }
+    ],
+    "raw_input": "華盛頓郵報報導指出，谷歌與 Pinterest 都在調整廣告投放的政策，希望兼顧使用者體驗與營收。",
+    "raw_asr_qwen": "《华盛顿邮报》报道指出，谷歌与Pinterest都在调整广告投放的政策，希望兼顾使用者体验与营收。",
+    "raw_asr_breeze": "華盛頓郵報報導指出谷歌與 Pinterest 都在調整廣告投放的政策希望兼顧使用者體驗與營收",
+    "raw_mer_breeze": 0.0,
+    "ctrl_input": "[h][uá][sh][èng][d][ùn][y][óu][b][ào]報導指出，[g][ǔ][g][ē]與 Pinterest 都在調整廣告投放的政策，希望兼顧使用者體驗與營收。",
+    "ctrl_asr_qwen": "《华盛顿邮报》报道指出，谷歌与Pinterest都在调整广告投放的政策，希望兼顾使用者体验与营收。",
+    "ctrl_asr_breeze": "華盛頓郵報報導指出谷歌與 Pinterest 都在調整廣告投放的政策希望兼顧使用者體驗與營收",
+    "ctrl_mer_breeze": 0.0,
+    "ctrl_error": null,
+    "delta": 0.0
+  },
+  {
+    "id": "ner-004030",
+    "ref_text": "譚德塞當年在世界衛生組織的發言屢屢引發爭議，那段期間珍·古德反而持續用她的方式呼籲大家關注環境。",
+    "entities": [
+      {
+        "surface": "譚德塞",
+        "zh": "譚德塞",
+        "en": "Tedros Adhanom",
+        "pinyin": "tán dé sài",
+        "zhuyin": "ㄊㄢˊ ㄉㄜˊ ㄙㄞˋ"
+      },
+      {
+        "surface": "世界衛生組織",
+        "zh": "世界衛生組織",
+        "en": "World Health Organization",
+        "pinyin": "shì jiè wèi shēng zǔ zhī",
+        "zhuyin": "ㄕˋ ㄐㄧㄝˋ ㄨㄟˋ ㄕㄥ ㄗㄨˇ ㄓ"
+      },
+      {
+        "surface": "珍·古德",
+        "zh": "珍·古德",
+        "en": "Jane Goodall",
+        "pinyin": "zhēn gǔ dé",
+        "zhuyin": "ㄓㄣ ㄍㄨˇ ㄉㄜˊ"
+      }
+    ],
+    "raw_input": "譚德塞當年在世界衛生組織的發言屢屢引發爭議，那段期間珍·古德反而持續用她的方式呼籲大家關注環境。",
+    "raw_asr_qwen": "版的塞当年在世界卫生组织的发言发语引发争议，那段期间，真古的反而持续用他的方式呼罗大家关注环境。",
+    "raw_asr_breeze": "板德賽當年在世界衛生組織的發言發育引發爭議那段期間珍古德反而持續用他的方式呼嚕大家關注環境",
+    "raw_mer_breeze": 0.13333333333333333,
+    "ctrl_input": "[t][án][d][é][s][ài]當年在[sh][ì][j][iè][w][èi][sh][ēng][z][ǔ][zh][ī]的發言屢屢引發爭議，那段期間[zh][ēn]·[g][ǔ][d][é]反而持續用她的方式呼籲大家關注環境。",
+    "ctrl_asr_qwen": "谭德赛当年在世界卫生组织的发言，我录引发争议。那段期间，曾古德反而持续用他的方式呼求大家关注环境。",
+    "ctrl_asr_breeze": "譚德塞當年在世界衛生組織的發言我錄引發爭議那段期間珍古德法持續用他的方式呼求大家關注環境",
+    "ctrl_mer_breeze": 0.13333333333333333,
+    "ctrl_error": null,
+    "delta": 0.0
+  },
+  {
+    "id": "ner-005878",
+    "ref_text": "經濟部今天說明，宏正和宏益這兩家廠商都已經通過了這一輪的補助審查，後續會陸續撥款。",
+    "entities": [
+      {
+        "surface": "經濟部",
+        "zh": "經濟部",
+        "en": "Ministry of Economic Affairs",
+        "pinyin": "jīng jì bù",
+        "zhuyin": "ㄐㄧㄥ ㄐㄧˋ ㄅㄨˋ"
+      },
+      {
+        "surface": "宏正",
+        "zh": "宏正",
+        "en": "ATEN",
+        "pinyin": "hóng zhèng",
+        "zhuyin": "ㄏㄨㄥˊ ㄓㄥˋ"
+      },
+      {
+        "surface": "宏益",
+        "zh": "宏益",
+        "en": "Hong Yi Fiber Industry",
+        "pinyin": "hóng yì",
+        "zhuyin": "ㄏㄨㄥˊ ㄧˋ"
+      }
+    ],
+    "raw_input": "經濟部今天說明，宏正和宏益這兩家廠商都已經通過了這一輪的補助審查，後續會陸續撥款。",
+    "raw_asr_qwen": "经济部今天说明，宏正和宏益这两家厂商都已经通过了这一轮的补助审查，后续会陆续拨款。",
+    "raw_asr_breeze": "經濟部今天說明宏正和宏毅這兩家廠商都已經通過了這一輪的補助審查後續會陸續撥款",
+    "raw_mer_breeze": 0.02631578947368421,
+    "ctrl_input": "[j][īng][j][ì][b][ù]今天說明，[h][óng][zh][èng]和[h][óng][y][ì]這兩家廠商都已經通過了這一輪的補助審查，後續會陸續撥款。",
+    "ctrl_asr_qwen": "经济部今天说明，宏正和宏毅这两家厂商都已经通过了这一轮的补助审查，后续会陆续拨款。",
+    "ctrl_asr_breeze": "經濟部今天說明宏正和宏義這兩家廠商都已經通過了這一輪的補助審查後續會陸續撥款",
+    "ctrl_mer_breeze": 0.02631578947368421,
+    "ctrl_error": null,
+    "delta": 0.0
+  },
+  {
+    "id": "ner-006570",
+    "ref_text": "林佳龍出席記者會時提到，台灣會持續深化和新加坡航空、NTT DOCOMO 等國際企業的合作關係。",
+    "entities": [
+      {
+        "surface": "林佳龍",
+        "zh": "林佳龍",
+        "en": "",
+        "pinyin": "lín jiā lóng",
+        "zhuyin": "ㄌㄧㄣˊ ㄐㄧㄚ ㄌㄨㄥˊ"
+      },
+      {
+        "surface": "新加坡航空",
+        "zh": "新加坡航空",
+        "en": "Singapore Airlines",
+        "pinyin": "xīn jiā pō háng kōng",
+        "zhuyin": "ㄒㄧㄣ ㄐㄧㄚ ㄆㄛ ㄏㄤˊ ㄎㄨㄥ"
+      },
+      {
+        "surface": "NTT DOCOMO",
+        "zh": "NTT DOCOMO",
+        "en": "NTT Docomo",
+        "pinyin": "",
+        "zhuyin": ""
+      }
+    ],
+    "raw_input": "林佳龍出席記者會時提到，台灣會持續深化和新加坡航空、NTT DOCOMO 等國際企業的合作關係。",
+    "raw_asr_qwen": "林佳龙出席记者会时提到，台湾会持续深化和新加坡航空、NTD、Docomo等国际企业的合作关系。",
+    "raw_asr_breeze": "林佳龍出席記者會時提到台灣會持續深化和新加坡航空NTD.com等國際企業的合作關係",
+    "raw_mer_breeze": 0.05555555555555555,
+    "ctrl_input": "[l][ín][j][iā][l][óng]出席記者會時提到，台灣會持續深化和[x][īn][j][iā][p][ō][h][áng][k][ōng]、NTT DOCOMO 等國際企業的合作關係。",
+    "ctrl_asr_qwen": "林家龙出席记者会时提到，台湾会持续深化和新加坡航空、NTT、Docomo等国际企业的合作关系。",
+    "ctrl_asr_breeze": "林佳龍出席記者會時提到台灣會持續深化和新加坡航空NTTDocomo等國際企業的合作關係",
+    "ctrl_mer_breeze": 0.05555555555555555,
+    "ctrl_error": null,
+    "delta": 0.0
+  },
+  {
+    "id": "ner-006851",
+    "ref_text": "公司最近導入 Workday 這套系統來管理人事資料，連艾默生跟邁蘭這種國際大廠都在用，據說可以省下不少行政成本。",
+    "entities": [
+      {
+        "surface": "Workday",
+        "zh": "Workday",
+        "en": "Workday",
+        "pinyin": "",
+        "zhuyin": ""
+      },
+      {
+        "surface": "艾默生",
+        "zh": "艾默生",
+        "en": "Emerson Electric",
+        "pinyin": "ài mò shēng",
+        "zhuyin": "ㄞˋ ㄇㄛˋ ㄕㄥ"
+      },
+      {
+        "surface": "邁蘭",
+        "zh": "邁蘭",
+        "en": "Mylan",
+        "pinyin": "mài lán",
+        "zhuyin": "ㄇㄞˋ ㄌㄢˊ"
+      }
+    ],
+    "raw_input": "公司最近導入 Workday 這套系統來管理人事資料，連艾默生跟邁蘭這種國際大廠都在用，據說可以省下不少行政成本。",
+    "raw_asr_qwen": "公司最近导入 Workday 这套系统来管理人事资料，连爱默生跟马兰这种国际大厂都在用，据说可以省下不少行政成本。",
+    "raw_asr_breeze": "公司最近導入 Workday 這套系統來管理人事資料連愛陌生跟馬蘭這種國際大廠都在用據說可以省下不少行政成本",
+    "raw_mer_breeze": 0.06521739130434782,
+    "ctrl_input": "公司最近導入 Workday 這套系統來管理人事資料，連[ài][m][ò][sh][ēng]跟[m][ài][l][án]這種國際大廠都在用，據說可以省下不少行政成本。",
+    "ctrl_asr_qwen": "公司最近导入 Workday 这套系统来管理人事资料，连爱默生跟麦澜这种国际大厂都在用，据说可以省下不少行政成本。",
+    "ctrl_asr_breeze": "公司最近導入 Workday 這套系統來管理人事資料連愛陌生跟麥蘭這種國際大廠都在用據說可以省下不少行政成本",
+    "ctrl_mer_breeze": 0.06521739130434782,
+    "ctrl_error": null,
+    "delta": 0.0
+  },
+  {
+    "id": "ner-005184",
+    "ref_text": "陳福陽帶領的團隊在半導體界相當有名，許多人把他和輝瑞、美高森美這類產業巨頭放在一起討論其領導風格。",
+    "entities": [
+      {
+        "surface": "陳福陽",
+        "zh": "陳福陽",
+        "en": "Hock Tan",
+        "pinyin": "chén fú yáng",
+        "zhuyin": "ㄔㄣˊ ㄈㄨˊ ㄧㄤˊ"
+      },
+      {
+        "surface": "輝瑞",
+        "zh": "輝瑞",
+        "en": "Pfizer",
+        "pinyin": "huī ruì",
+        "zhuyin": "ㄏㄨㄟ ㄖㄨㄟˋ"
+      },
+      {
+        "surface": "美高森美",
+        "zh": "美高森美",
+        "en": "Microchip",
+        "pinyin": "měi gāo sēn měi",
+        "zhuyin": "ㄇㄟˇ ㄍㄠ ㄙㄣ ㄇㄟˇ"
+      }
+    ],
+    "raw_input": "陳福陽帶領的團隊在半導體界相當有名，許多人把他和輝瑞、美高森美這類產業巨頭放在一起討論其領導風格。",
+    "raw_asr_qwen": "陈福阳带领的团队在半导体界相当有名，许多人把他和辉瑞、美、高升美这类产业巨头放在一起讨论其领导风格。",
+    "raw_asr_breeze": "陳富揚帶領的團隊在半導體界相當有名許多人把他和輝瑞美高深美這類產業巨頭放在一起討論其領導風格",
+    "raw_mer_breeze": 0.06521739130434782,
+    "ctrl_input": "[ch][én][f][ú][y][áng]帶領的團隊在半導體界相當有名，許多人把他和[h][uī][r][uì]、[m][ěi][g][āo][s][ēn][m][ěi]這類產業巨頭放在一起討論其領導風格。",
+    "ctrl_asr_qwen": "陈富阳带领的团队在半导体界相当有名，许多人把他和辉瑞、美高、森美这类产业巨头放在一起，讨论其领导风格。",
+    "ctrl_asr_breeze": "陳富揚帶領的團隊在半導體界相當有名許多人把他和輝瑞美高森美這類產業巨頭放在一起討論其領導風格",
+    "ctrl_mer_breeze": 0.043478260869565216,
+    "ctrl_error": null,
+    "delta": -0.021739130434782608
+  },
+  {
+    "id": "ner-005654",
+    "ref_text": "蔡康永在訪談裡聊到玄彬的演技，還順便推薦了奉俊昊導演的幾部作品，整段對話讓人聽得很過癮。",
+    "entities": [
+      {
+        "surface": "蔡康永",
+        "zh": "蔡康永",
+        "en": "Kevin Tsai",
+        "pinyin": "cài kāng yǒng",
+        "zhuyin": "ㄘㄞˋ ㄎㄤ ㄩㄥˇ"
+      },
+      {
+        "surface": "玄彬",
+        "zh": "玄彬",
+        "en": "Hyun Bin",
+        "pinyin": "xuán bīn",
+        "zhuyin": "ㄒㄩㄢˊ ㄅㄧㄣ"
+      },
+      {
+        "surface": "奉俊昊",
+        "zh": "奉俊昊",
+        "en": "Bong Joon-ho",
+        "pinyin": "fèng jùn hào",
+        "zhuyin": "ㄈㄥˋ ㄐㄩㄣˋ ㄏㄠˋ"
+      }
+    ],
+    "raw_input": "蔡康永在訪談裡聊到玄彬的演技，還順便推薦了奉俊昊導演的幾部作品，整段對話讓人聽得很過癮。",
+    "raw_asr_qwen": "蔡康永在访谈里聊到玄彬的演技，还顺便推荐了奉俊昊导演的几部作品。整段对话让人听得很过瘾。",
+    "raw_asr_breeze": "蔡康永在訪談裡聊到玄冰的演技還順便推薦了奉軍號導演的幾部作品整段對話讓人聽得很過敏",
+    "raw_mer_breeze": 0.0975609756097561,
+    "ctrl_input": "[c][ài][k][āng][y][ǒng]在訪談裡聊到[x][uán][b][īn]的演技，還順便推薦了[f][èng][j][ùn][h][ào]導演的幾部作品，整段對話讓人聽得很過癮。",
+    "ctrl_asr_qwen": "蔡康永在访谈里聊到玄彬的演技，还顺便推荐了奉俊昊导演的几部作品，整段对话让人听得很过瘾。",
+    "ctrl_asr_breeze": "蔡康永在訪談裡聊到玄冰的演技還順便推薦了封俊浩導演的幾部作品整段對話讓人聽得很過癮",
+    "ctrl_mer_breeze": 0.07317073170731707,
+    "ctrl_error": null,
+    "delta": -0.024390243902439032
+  },
+  {
+    "id": "ner-009081",
+    "ref_text": "林宏昀跟呂昊謙最近合作一個口說評測的小專案，他們把實驗腳本放到 GitHub 上，方便彼此協作。",
+    "entities": [
+      {
+        "surface": "林宏昀",
+        "zh": "林宏昀",
+        "en": "Hong-Yun Lin",
+        "pinyin": "lín hóng yún",
+        "zhuyin": "ㄌㄧㄣˊ ㄏㄨㄥˊ ㄩㄣˊ"
+      },
+      {
+        "surface": "呂昊謙",
+        "zh": "呂昊謙",
+        "en": "Hao-Chien Lu",
+        "pinyin": "lǚ hào qiān",
+        "zhuyin": "ㄌㄩˇ ㄏㄠˋ ㄑㄧㄢ"
+      },
+      {
+        "surface": "GitHub",
+        "zh": "GitHub",
+        "en": "GitHub",
+        "pinyin": "",
+        "zhuyin": ""
+      }
+    ],
+    "raw_input": "林宏昀跟呂昊謙最近合作一個口說評測的小專案，他們把實驗腳本放到 GitHub 上，方便彼此協作。",
+    "raw_asr_qwen": "林鸿云跟导号处最近合作一个口说评测的小专案，他们把实验脚本放到 GitHub 上，方便彼此协作。",
+    "raw_asr_breeze": "林鴻雲跟導號處最近合作一個口說評測的小專案他們把實驗腳本放到 GitHub 上方便彼此協作",
+    "raw_mer_breeze": 0.13157894736842105,
+    "ctrl_input": "[l][ín][h][óng][y][ún]跟[l][ǚ][h][ào][q][iān]最近合作一個口說評測的小專案，他們把實驗腳本放到 GitHub 上，方便彼此協作。",
+    "ctrl_asr_qwen": "林鸿云跟吕浩谦最近合作一个口说评测的小专案，他们把实验脚本放到 GitHub 上，方便彼此协作。",
+    "ctrl_asr_breeze": "林鴻雲跟呂浩謙最近合作一個口說評測的小專案他們把實驗腳本放到 GitHub 上方便彼此協作",
+    "ctrl_mer_breeze": 0.07894736842105263,
+    "ctrl_error": null,
+    "delta": -0.05263157894736842
+  },
+  {
+    "id": "ner-009749",
+    "ref_text": "momo 購物網這次的年中慶折扣很驚人，我直接把蔻馳的包包跟花王的洗衣精一次補貨補滿。",
+    "entities": [
+      {
+        "surface": "momo 購物網",
+        "zh": "momo購物網",
+        "en": "momo.com",
+        "pinyin": "gòu wù wǎng",
+        "zhuyin": "ㄍㄡˋ ㄨˋ ㄨㄤˇ"
+      },
+      {
+        "surface": "蔻馳",
+        "zh": "蔻馳",
+        "en": "Coach",
+        "pinyin": "kòu chí",
+        "zhuyin": "ㄎㄡˋ ㄔˊ"
+      },
+      {
+        "surface": "花王",
+        "zh": "花王",
+        "en": "Kao",
+        "pinyin": "huā wáng",
+        "zhuyin": "ㄏㄨㄚ ㄨㄤˊ"
+      }
+    ],
+    "raw_input": "momo 購物網這次的年中慶折扣很驚人，我直接把蔻馳的包包跟花王的洗衣精一次補貨補滿。",
+    "raw_asr_qwen": "某某购物网这次的年终庆折扣很惊人，我直接把扣五尺的包包跟花王的洗衣精一次补货补满。",
+    "raw_asr_breeze": "王某購物王這次的年終慶折扣很驚人我直接把扣五次的包包跟花王的洗衣精一次補貨補滿",
+    "raw_mer_breeze": 0.1891891891891892,
+    "ctrl_input": "momo [g][òu][w][ù][w][ǎng]這次的年中慶折扣很驚人，我直接把[k][òu][ch][í]的包包跟[h][uā][w][áng]的洗衣精一次補貨補滿。",
+    "ctrl_asr_qwen": "某某购物网这次的年终庆折扣很惊人，我直接把蔻驰的包包跟花王的洗衣精一次补货补满。",
+    "ctrl_asr_breeze": "Momo購物網這次的年終慶折扣很驚人我直接把扣持的包包跟花王的洗衣精一次補貨補滿",
+    "ctrl_mer_breeze": 0.08108108108108109,
+    "ctrl_error": null,
+    "delta": -0.10810810810810811
+  },
+  {
+    "id": "ner-006453",
+    "ref_text": "歐特克和霍尼韋爾自動化這幾年都在推工廠數位孿生，據說連麥肯森的顧問都跑去研究他們的整合方案。",
+    "entities": [
+      {
+        "surface": "歐特克",
+        "zh": "歐特克",
+        "en": "Autodesk",
+        "pinyin": "ōu tè kè",
+        "zhuyin": "ㄡ ㄊㄜˋ ㄎㄜˋ"
+      },
+      {
+        "surface": "霍尼韋爾自動化",
+        "zh": "霍尼韋爾自動化",
+        "en": "Honeywell Automation",
+        "pinyin": "huò ní wéi ěr zì dòng huà",
+        "zhuyin": "ㄏㄨㄛˋ ㄋㄧˊ ㄨㄟˊ ㄦˇ ㄗˋ ㄉㄨㄥˋ ㄏㄨㄚˋ"
+      },
+      {
+        "surface": "麥肯森",
+        "zh": "麥肯森",
+        "en": "McKesson",
+        "pinyin": "mài kěn sēn",
+        "zhuyin": "ㄇㄞˋ ㄎㄣˇ ㄙㄣ"
+      }
+    ],
+    "raw_input": "歐特克和霍尼韋爾自動化這幾年都在推工廠數位孿生，據說連麥肯森的顧問都跑去研究他們的整合方案。",
+    "raw_asr_qwen": "欧特克和霍尼韦尔自动化这几年都在推工厂数位港生，据说连麦肯森的顾问都跑去研究他们的整合方案。",
+    "raw_asr_breeze": "AutoCore 或 Neewer 自動化這幾年都在推工廠數位港生據說連麥肯森的顧問都跑去研究他們的整合方案",
+    "raw_mer_breeze": 0.20454545454545456,
+    "ctrl_input": "[ōu][t][è][k][è]和[h][uò][n][í][w][éi][ěr][z][ì][d][òng][h][uà]這幾年都在推工廠數位孿生，據說連[m][ài][k][ěn][s][ēn]的顧問都跑去研究他們的整合方案。",
+    "ctrl_asr_qwen": "欧特克和霍尼韦尔自动化这几年都在推工厂数位象神，据说连麦肯森的顾问都跑去研究他们的整合方案。",
+    "ctrl_asr_breeze": "歐特克和霍尼維爾自動化這幾年都在推工廠數位向神據說連麥肯森的顧問都跑去研究他們的整合方案",
+    "ctrl_mer_breeze": 0.06818181818181818,
+    "ctrl_error": null,
+    "delta": -0.13636363636363638
+  }
+]

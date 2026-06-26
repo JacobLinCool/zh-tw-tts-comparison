@@ -1,0 +1,86 @@
+SUB	surface	english	conf	category	reason
+Y	AIMEX Lab	AIMEX Lab	high	acronym	Lab is inherently English/acronym-named; surface is already Latin and read as 'A
+Y	NTT DOCOMO	NTT Docomo	high	acronym	Surface is already Latin; Taiwanese read it as 'NTT DoCoMo' in Latin letters.
+Y	思愛普	SAP	high	acronym	Western enterprise-software brand read as letters S-A-P; 思愛普 transliteration nob
+Y	超微	AMD	high	acronym	Taiwanese universally say 'AMD'; 超微 is a written form nobody pronounces aloud.
+Y	Red Velvet	Red Velvet	high	gray	K-pop group with an English stage name; surface is already Latin and Taiwanese s
+Y	SK電訊	SK Telecom	low	gray	Korean telecom; surface 'SK電訊' already carries Latin 'SK', and 電訊=Telecom, so 'S
+Y	奧斯頓馬丁	Aston Martin	medium	gray	Luxury car marque often referred to by English 'Aston Martin' in Taiwan; transli
+Y	巴德·邦尼	Bad Bunny	medium	gray	English stage name; the transliteration 巴德·邦尼 is not established, and Taiwanese 
+Y	美高森美	Microchip	medium	gray	Niche B2B semiconductor firm; the transliteration 美高森美 is rarely spoken in Taiwa
+Y	邁蘭	Mylan	low	gray	Generic-pharma firm; 邁蘭 is a bookish transliteration and pharma professionals sa
+Y	麥肯森	McKesson	low	gray	Obscure US healthcare-distribution firm; no common Taiwan Chinese usage and 麥肯森 
+Y	GitHub	GitHub	high	western-brand	Western developer platform written in Latin; Taiwanese say GitHub.
+Y	Pinterest	Pinterest	high	western-brand	Surface already Latin; Taiwanese say 'Pinterest', no Chinese form used.
+Y	Slack	Slack	high	western-brand	Western SaaS brand written in Latin; Taiwanese say Slack.
+Y	Visa	Visa	high	western-brand	Surface is already Latin; Taiwanese always say 'Visa' for the payment network, n
+Y	Workday	Workday	high	western-brand	Western SaaS brand written in Latin; Taiwanese say Workday.
+Y	保時捷	Porsche	medium	western-brand	Guidance lists 保時捷=Porsche as code-switch TRUE; though 保時捷 is also common in Tai
+Y	愛迪達	Adidas	high	western-brand	Western sports brand Taiwanese normally say in English ('Adidas'); per Taiwan co
+Y	歐特克	Autodesk	high	western-brand	Western software brand; 歐特克 is a bookish transliteration nobody uses — Taiwanese
+Y	百思買	Best Buy	high	western-brand	US retailer; 百思買 is a transliteration nobody uses — Taiwanese say Best Buy. Expl
+Y	耐吉	Nike	high	western-brand	Western sportswear brand; 耐吉 transliteration nobody uses — Taiwanese say Nike. E
+Y	艾默生	Emerson	medium	western-brand	US industrial-automation brand known in Taiwan industry as 'Emerson'; 艾默生 is a b
+Y	蔻馳	Coach	high	western-brand	Western luxury brand; 蔻馳 is a transliteration nobody uses — Taiwanese say Coach.
+Y	谷歌	Google	high	western-brand	Taiwan says 'Google' in English; 谷歌 is the Mainland name not used in Taiwan spee
+Y	霍尼韋爾自動化	Honeywell Automation	medium	western-brand	Honeywell is a well-known US industrial brand engineers say in English; 霍尼韋爾 tra
+N	奉俊昊	Bong Joon-ho	high	cjk-origin	Korean director; Taiwanese read 奉俊昊 in Mandarin, not 'Bong Joon-ho'.
+N	少女時代	Girls' Generation	high	cjk-origin	Korean group; Taiwanese read the Chinese name 少女時代, not 'Girls' Generation'.
+N	玄彬	Hyun Bin	high	cjk-origin	Korean actor; Taiwanese read 玄彬 in Mandarin, not 'Hyun Bin'.
+N	花王	Kao	high	cjk-origin	Japanese FMCG company; Taiwanese read 花王 in Mandarin, not 'Kao'. Explicit guidan
+N	陳福陽	Hock Tan	high	cjk-origin	Broadcom CEO has a native Chinese name; Taiwan media say 陳福陽, not 'Hock Tan'.
+N	馬雲	Jack Ma	high	cjk-origin	Chinese tech founder with native Chinese name; Taiwanese say 馬雲, not 'Jack Ma'. 
+N	黃仁勳	Jensen Huang	high	cjk-origin	Taiwan media say 黃仁勳, not 'Jensen Huang'; natively Chinese name.
+N	SOGO百貨	Pacific SOGO	medium	gray	Spoken as 'SOGO百貨' (SOGO in Latin letters, 百貨 in Chinese); the full English 'Pac
+N	momo購物網	momo.com	medium	gray	Taiwan e-commerce brand spoken as 'momo購物網' (momo in Latin, 購物網 in Chinese); the
+Y	三星	Samsung	low	gray	Genuine judgment call: 三星 is very common in Taiwan spoken Mandarin, but Samsung 
+N	妮維雅	Nivea	low	gray	Nivea skincare; 妮維雅 is the official, advertised, widely-used Taiwan Chinese name
+Y	摩根大通	JPMorgan Chase	medium	gray	摩根大通 is the established Taiwan media name and dominant spoken form; finance insi
+N	新加坡航空	Singapore Airlines	medium	gray	Foreign airline with a fully established Taiwan Chinese name 新加坡航空 / 新航; Taiwane
+N	永明金融	Sun Life	low	gray	Sun Life has low presence in Taiwan; 永明金融 is its official Chinese name and would
+Y	法國燃氣蘇伊士	Engie	low	gray	Very obscure in Taiwan; the long descriptive Chinese name would be read aloud; a
+Y	瑞士寶盛	Julius Baer	low	gray	Swiss private bank; 瑞士寶盛 / 寶盛 is used in Taiwan financial media, though finance 
+Y	盧克石油	Lukoil	low	gray	Obscure Russian oil firm; 盧克石油 is the standard Chinese name and a speaker would 
+Y	美國鋁業	Alcoa	medium	gray	Alcoa is little known in Taiwan; the descriptive Chinese name 美國鋁業 is readable a
+Y	萬寶龍	Montblanc	low	gray	Montblanc luxury brand; 萬寶龍 is an established and commonly used Taiwan Chinese n
+Y	路透	Reuters	medium	gray	路透/路透社 is the established and dominant spoken form in Taiwan news; some say 'Reu
+N	交大資工	NYCU Department of Computer Science	high	taiwan	Taiwan university dept; spoken naturally as the Chinese 交大資工.
+N	凱基證券	KGI Securities	high	taiwan	Taiwan securities firm; Taiwanese say 凱基證券.
+N	力旺	eMemory	high	taiwan	Taiwan IC-design firm; spoken Chinese name 力旺.
+N	卜蜂	Charoen Pokphand (Taiwan)	high	taiwan	Taiwan-listed agribusiness; Taiwanese say 卜蜂, not the romanized Charoen Pokphand
+N	台塑化	Formosa Petrochemical	high	taiwan	Taiwanese petrochemical firm; Taiwanese say 台塑化, not 'Formosa Petrochemical'.
+N	台塑集團	Formosa Plastics Group	high	taiwan	Taiwanese conglomerate; Taiwanese say 台塑/台塑集團, not 'Formosa Plastics'.
+N	合勤	Zyxel	high	taiwan	Taiwan company; the corporate name 合勤 is read in Chinese (brand Zyxel aside, sur
+N	呂昊謙	Hao-Chien Lu	high	taiwan	Taiwanese researcher; Chinese name 呂昊謙 is read in Mandarin.
+N	奇力新	Chilisin	high	taiwan	Taiwanese passive-components maker; spoken as 奇力新, not 'Chilisin'.
+N	宏正	ATEN	high	taiwan	Taiwan company (ATEN brand); the corporate surface 宏正 is read in Chinese.
+N	宏益	Hong Yi Fiber Industry	high	taiwan	Taiwan textile/fiber company; Taiwanese read the Chinese name 宏益.
+N	張永儒	Yung-Ju Chang	high	taiwan	Taiwanese professor with native Chinese name; read in Mandarin.
+N	張雨生	Tom Chang	high	taiwan	Taiwanese rock/pop singer; Chinese name is the only spoken form in Taiwan.
+N	彩晶	Hannstar	high	taiwan	Taiwan panel maker; spoken Chinese name 彩晶.
+N	林佳龍		high	taiwan	Taiwanese politician; always referred to by Chinese name 林佳龍.
+N	林宏昀	Hong-Yun Lin	high	taiwan	Taiwanese researcher; Chinese name 林宏昀 is read in Mandarin.
+N	正新	Cheng Shin Rubber	high	taiwan	Taiwanese tire maker; the company name 正新 is spoken in Chinese (its brand Maxxis
+N	王文淵	Wang Wen-yuan	high	taiwan	Taiwanese businessman (Formosa Plastics); native Chinese name, spoken in Mandari
+N	立榮航空	UNI Air	high	taiwan	Taiwan airline; spoken naturally as 立榮航空.
+N	經濟部	Ministry of Economic Affairs	high	taiwan	Taiwan government ministry; read in Chinese as 經濟部.
+N	美式賣場		high	taiwan	Taiwan YouTuber channel name 美式賣場 (Chinese); read in Mandarin, no Latin form (en
+N	蔡康永	Kevin Tsai	high	taiwan	Taiwanese host with native Chinese name; read in Mandarin.
+N	藍正龍	Blue Lan	high	taiwan	Taiwanese actor; natively Chinese name, always spoken as 藍正龍, never 'Blue Lan'.
+N	鴻準	Foxconn Technology	high	taiwan	Taiwan Foxconn-affiliated firm; spoken Chinese name 鴻準.
+N	世界衛生組織	World Health Organization	high	western-brand	Full Chinese surface 世界衛生組織 is read in Mandarin; though WHO acronym exists, the 
+Y	愛馬仕	Hermès	medium	western-brand	愛馬仕 is the established, widely-used Taiwan Chinese name for Hermès (unlike 蔻馳/Co
+N	聯準會	Federal Reserve	high	western-brand	聯準會 is the universal Taiwan term for the US Federal Reserve; nobody code-switche
+N	華盛頓郵報	The Washington Post	high	western-brand	Taiwan news media use the established Chinese name 華盛頓郵報; full Chinese surface i
+Y	輝瑞	Pfizer	medium	western-brand	輝瑞 is the dominant Taiwan name for Pfizer (heavily used during COVID, e.g. 輝瑞疫苗)
+N	迪卡儂	Decathlon	medium	western-brand	Decathlon is marketed and spoken in Taiwan as 迪卡儂; the Chinese name is the domin
+N	麥當勞	McDonald's	high	western-brand	Established Chinese name; Taiwanese always say 麥當勞, never 'McDonald's'.
+N	內馬爾	Neymar	high	western-person	Brazilian footballer; Taiwan uses the Chinese transliteration 內馬爾.
+N	勞埃德·布蘭克梵	Lloyd Blankfein	high	western-person	Obscure Western finance figure; Taiwan media use the Chinese transliteration, no
+N	彼得·提爾	Peter Thiel	medium	western-person	Mainstream Taiwan media use the Chinese transliteration 彼得·提爾; tech circles may 
+N	拉夫羅夫	Sergey Lavrov	high	western-person	Russian foreign minister; Taiwan media use the Chinese transliteration 拉夫羅夫.
+N	珍·古德	Jane Goodall	high	western-person	Taiwan media use the Chinese transliteration 珍·古德 for Jane Goodall.
+N	舒馬克	Michael Schumacher	high	western-person	Taiwan media use the Chinese transliteration 舒馬克 for the F1 driver.
+N	菲爾普斯	Michael Phelps	high	western-person	Western swimmer; Taiwan media use the Chinese transliteration 菲爾普斯.
+N	蕾哈娜	Rihanna	medium	western-person	Pop star; 蕾哈娜 is a well-established Taiwan transliteration and the dominant spok
+N	譚德塞	Tedros Adhanom	high	western-person	WHO chief became famous in Taiwan during COVID as 譚德塞; Chinese transliteration i

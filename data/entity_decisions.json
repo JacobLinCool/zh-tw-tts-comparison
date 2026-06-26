@@ -1,0 +1,767 @@
+[
+ {
+  "entity_id": "companies_intl:157",
+  "surface": "Visa",
+  "use_english": true,
+  "english_form": "Visa",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Surface is already Latin; Taiwanese always say 'Visa' for the payment network, never a Chinese transliteration."
+ },
+ {
+  "entity_id": "companies_intl:892",
+  "surface": "愛馬仕",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-brand",
+  "confidence": "medium",
+  "reason": "愛馬仕 is the established, widely-used Taiwan Chinese name for Hermès (unlike 蔻馳/Coach). Spoken Mandarin reading dominates; some affluent speakers say Hermès, hence medium."
+ },
+ {
+  "entity_id": "companies_intl:625",
+  "surface": "麥當勞",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Established Chinese name; Taiwanese always say 麥當勞, never 'McDonald's'."
+ },
+ {
+  "entity_id": "custom:10",
+  "surface": "張永儒",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese professor with native Chinese name; read in Mandarin."
+ },
+ {
+  "entity_id": "custom:1",
+  "surface": "交大資工",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan university dept; spoken naturally as the Chinese 交大資工."
+ },
+ {
+  "entity_id": "custom:2",
+  "surface": "AIMEX Lab",
+  "use_english": true,
+  "english_form": "AIMEX Lab",
+  "category": "acronym",
+  "confidence": "high",
+  "reason": "Lab is inherently English/acronym-named; surface is already Latin and read as 'AIMEX Lab'."
+ },
+ {
+  "entity_id": "companies_intl:871",
+  "surface": "華盛頓郵報",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Taiwan news media use the established Chinese name 華盛頓郵報; full Chinese surface is read in Mandarin."
+ },
+ {
+  "entity_id": "companies_intl:2",
+  "surface": "谷歌",
+  "use_english": true,
+  "english_form": "Google",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Taiwan says 'Google' in English; 谷歌 is the Mainland name not used in Taiwan speech."
+ },
+ {
+  "entity_id": "companies_intl:69",
+  "surface": "Pinterest",
+  "use_english": true,
+  "english_form": "Pinterest",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Surface already Latin; Taiwanese say 'Pinterest', no Chinese form used."
+ },
+ {
+  "entity_id": "companies_intl:293",
+  "surface": "保時捷",
+  "use_english": true,
+  "english_form": "Porsche",
+  "category": "western-brand",
+  "confidence": "medium",
+  "reason": "Guidance lists 保時捷=Porsche as code-switch TRUE; though 保時捷 is also common in Taiwan, English 'Porsche' is frequent for the marque."
+ },
+ {
+  "entity_id": "people_intl:492",
+  "surface": "舒馬克",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "high",
+  "reason": "Taiwan media use the Chinese transliteration 舒馬克 for the F1 driver."
+ },
+ {
+  "entity_id": "companies_intl:316",
+  "surface": "奧斯頓馬丁",
+  "use_english": true,
+  "english_form": "Aston Martin",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "Luxury car marque often referred to by English 'Aston Martin' in Taiwan; transliteration 奧斯頓馬丁 is bookish. Genuine judgment call."
+ },
+ {
+  "entity_id": "people_intl:45",
+  "surface": "譚德塞",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "high",
+  "reason": "WHO chief became famous in Taiwan during COVID as 譚德塞; Chinese transliteration is the standard spoken form."
+ },
+ {
+  "entity_id": "companies_intl:773",
+  "surface": "世界衛生組織",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Full Chinese surface 世界衛生組織 is read in Mandarin; though WHO acronym exists, the written Chinese name is read as Chinese."
+ },
+ {
+  "entity_id": "people_intl:379",
+  "surface": "珍·古德",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "high",
+  "reason": "Taiwan media use the Chinese transliteration 珍·古德 for Jane Goodall."
+ },
+ {
+  "entity_id": "people_intl:328",
+  "surface": "陳福陽",
+  "use_english": false,
+  "english_form": "",
+  "category": "cjk-origin",
+  "confidence": "high",
+  "reason": "Broadcom CEO has a native Chinese name; Taiwan media say 陳福陽, not 'Hock Tan'."
+ },
+ {
+  "entity_id": "companies_intl:686",
+  "surface": "輝瑞",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-brand",
+  "confidence": "medium",
+  "reason": "輝瑞 is the dominant Taiwan name for Pfizer (heavily used during COVID, e.g. 輝瑞疫苗); some say Pfizer, hence medium."
+ },
+ {
+  "entity_id": "companies_intl:18",
+  "surface": "美高森美",
+  "use_english": true,
+  "english_form": "Microchip",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "Niche B2B semiconductor firm; the transliteration 美高森美 is rarely spoken in Taiwan's industry, where engineers code-switch to the English name. Name/data ambiguity (Microsemi vs Microchip) lowers confidence."
+ },
+ {
+  "entity_id": "companies_tw:313",
+  "surface": "立榮航空",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan airline; spoken naturally as 立榮航空."
+ },
+ {
+  "entity_id": "companies_tw:46",
+  "surface": "鴻準",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan Foxconn-affiliated firm; spoken Chinese name 鴻準."
+ },
+ {
+  "entity_id": "companies_tw:113",
+  "surface": "合勤",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan company; the corporate name 合勤 is read in Chinese (brand Zyxel aside, surface is the Chinese name)."
+ },
+ {
+  "entity_id": "people_tw:389",
+  "surface": "蔡康永",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese host with native Chinese name; read in Mandarin."
+ },
+ {
+  "entity_id": "people_intl:917",
+  "surface": "玄彬",
+  "use_english": false,
+  "english_form": "",
+  "category": "cjk-origin",
+  "confidence": "high",
+  "reason": "Korean actor; Taiwanese read 玄彬 in Mandarin, not 'Hyun Bin'."
+ },
+ {
+  "entity_id": "people_intl:649",
+  "surface": "奉俊昊",
+  "use_english": false,
+  "english_form": "",
+  "category": "cjk-origin",
+  "confidence": "high",
+  "reason": "Korean director; Taiwanese read 奉俊昊 in Mandarin, not 'Bong Joon-ho'."
+ },
+ {
+  "entity_id": "people_intl:248",
+  "surface": "彼得·提爾",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "medium",
+  "reason": "Mainstream Taiwan media use the Chinese transliteration 彼得·提爾; tech circles may say 'Peter Thiel', so medium, but default Chinese."
+ },
+ {
+  "entity_id": "companies_tw:13",
+  "surface": "力旺",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan IC-design firm; spoken Chinese name 力旺."
+ },
+ {
+  "entity_id": "companies_tw:80",
+  "surface": "彩晶",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan panel maker; spoken Chinese name 彩晶."
+ },
+ {
+  "entity_id": "companies_tw:433",
+  "surface": "經濟部",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan government ministry; read in Chinese as 經濟部."
+ },
+ {
+  "entity_id": "companies_tw:99",
+  "surface": "宏正",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan company (ATEN brand); the corporate surface 宏正 is read in Chinese."
+ },
+ {
+  "entity_id": "companies_tw:233",
+  "surface": "宏益",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan textile/fiber company; Taiwanese read the Chinese name 宏益."
+ },
+ {
+  "entity_id": "companies_intl:138",
+  "surface": "歐特克",
+  "use_english": true,
+  "english_form": "Autodesk",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Western software brand; 歐特克 is a bookish transliteration nobody uses — Taiwanese say Autodesk. Explicit guidance example."
+ },
+ {
+  "entity_id": "companies_intl:405",
+  "surface": "霍尼韋爾自動化",
+  "use_english": true,
+  "english_form": "Honeywell Automation",
+  "category": "western-brand",
+  "confidence": "medium",
+  "reason": "Honeywell is a well-known US industrial brand engineers say in English; 霍尼韋爾 transliteration is bookish. 自動化 descriptor may stay Chinese in speech, hence medium."
+ },
+ {
+  "entity_id": "companies_intl:739",
+  "surface": "麥肯森",
+  "use_english": true,
+  "english_form": "McKesson",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Obscure US healthcare-distribution firm; no common Taiwan Chinese usage and 麥肯森 is a bookish transliteration, so professionals would say McKesson — but low salience makes this a judgment call."
+ },
+ {
+  "entity_id": "people_tw:49",
+  "surface": "林佳龍",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese politician; always referred to by Chinese name 林佳龍."
+ },
+ {
+  "entity_id": "companies_intl:935",
+  "surface": "新加坡航空",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "Foreign airline with a fully established Taiwan Chinese name 新加坡航空 / 新航; Taiwanese say the Chinese, not 'Singapore Airlines'."
+ },
+ {
+  "entity_id": "companies_intl:801",
+  "surface": "NTT DOCOMO",
+  "use_english": true,
+  "english_form": "NTT Docomo",
+  "category": "acronym",
+  "confidence": "high",
+  "reason": "Surface is already Latin; Taiwanese read it as 'NTT DoCoMo' in Latin letters."
+ },
+ {
+  "entity_id": "companies_tw:214",
+  "surface": "凱基證券",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan securities firm; Taiwanese say 凱基證券."
+ },
+ {
+  "entity_id": "companies_intl:807",
+  "surface": "SK電訊",
+  "use_english": true,
+  "english_form": "SK Telecom",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Korean telecom; surface 'SK電訊' already carries Latin 'SK', and 電訊=Telecom, so 'SK Telecom' is a plausible spoken form, but dominant Taiwan usage is mixed — flag for review."
+ },
+ {
+  "entity_id": "companies_intl:273",
+  "surface": "瑞士寶盛",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Swiss private bank; 瑞士寶盛 / 寶盛 is used in Taiwan financial media, though finance professionals may code-switch to 'Julius Baer' — genuine judgment call."
+ },
+ {
+  "entity_id": "companies_intl:41",
+  "surface": "Workday",
+  "use_english": true,
+  "english_form": "Workday",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Western SaaS brand written in Latin; Taiwanese say Workday."
+ },
+ {
+  "entity_id": "companies_intl:375",
+  "surface": "艾默生",
+  "use_english": true,
+  "english_form": "Emerson",
+  "category": "western-brand",
+  "confidence": "medium",
+  "reason": "US industrial-automation brand known in Taiwan industry as 'Emerson'; 艾默生 is a bookish transliteration. Medium due to B2B salience."
+ },
+ {
+  "entity_id": "companies_intl:709",
+  "surface": "邁蘭",
+  "use_english": true,
+  "english_form": "Mylan",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Generic-pharma firm; 邁蘭 is a bookish transliteration and pharma professionals say 'Mylan', but low public salience makes it a judgment call."
+ },
+ {
+  "entity_id": "custom:13",
+  "surface": "林宏昀",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese researcher; Chinese name 林宏昀 is read in Mandarin."
+ },
+ {
+  "entity_id": "custom:15",
+  "surface": "呂昊謙",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese researcher; Chinese name 呂昊謙 is read in Mandarin."
+ },
+ {
+  "entity_id": "companies_intl:48",
+  "surface": "GitHub",
+  "use_english": true,
+  "english_form": "GitHub",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Western developer platform written in Latin; Taiwanese say GitHub."
+ },
+ {
+  "entity_id": "companies_tw:322",
+  "surface": "momo購物網",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "Taiwan e-commerce brand spoken as 'momo購物網' (momo in Latin, 購物網 in Chinese); the full English 'momo.com' is not the spoken form, so keep the surface — TTS reads 'momo' in Latin anyway."
+ },
+ {
+  "entity_id": "companies_intl:915",
+  "surface": "蔻馳",
+  "use_english": true,
+  "english_form": "Coach",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Western luxury brand; 蔻馳 is a transliteration nobody uses — Taiwanese say Coach. Explicit guidance example."
+ },
+ {
+  "entity_id": "companies_intl:581",
+  "surface": "花王",
+  "use_english": false,
+  "english_form": "",
+  "category": "cjk-origin",
+  "confidence": "high",
+  "reason": "Japanese FMCG company; Taiwanese read 花王 in Mandarin, not 'Kao'. Explicit guidance example."
+ },
+ {
+  "entity_id": "companies_intl:570",
+  "surface": "百思買",
+  "use_english": true,
+  "english_form": "Best Buy",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "US retailer; 百思買 is a transliteration nobody uses — Taiwanese say Best Buy. Explicit guidance example."
+ },
+ {
+  "entity_id": "companies_intl:904",
+  "surface": "萬寶龍",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Montblanc luxury brand; 萬寶龍 is an established and commonly used Taiwan Chinese name (unlike 蔻馳), though code-switching to 'Montblanc' also occurs — judgment call."
+ },
+ {
+  "entity_id": "companies_intl:637",
+  "surface": "耐吉",
+  "use_english": true,
+  "english_form": "Nike",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Western sportswear brand; 耐吉 transliteration nobody uses — Taiwanese say Nike. Explicit guidance example."
+ },
+ {
+  "entity_id": "people_intl:289",
+  "surface": "馬雲",
+  "use_english": false,
+  "english_form": "",
+  "category": "cjk-origin",
+  "confidence": "high",
+  "reason": "Chinese tech founder with native Chinese name; Taiwanese say 馬雲, not 'Jack Ma'. Explicit guidance example."
+ },
+ {
+  "entity_id": "companies_intl:113",
+  "surface": "思愛普",
+  "use_english": true,
+  "english_form": "SAP",
+  "category": "acronym",
+  "confidence": "high",
+  "reason": "Western enterprise-software brand read as letters S-A-P; 思愛普 transliteration nobody uses. Explicit guidance example."
+ },
+ {
+  "entity_id": "companies_intl:46",
+  "surface": "Slack",
+  "use_english": true,
+  "english_form": "Slack",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Western SaaS brand written in Latin; Taiwanese say Slack."
+ },
+ {
+  "entity_id": "people_tw:432",
+  "surface": "美式賣場",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan YouTuber channel name 美式賣場 (Chinese); read in Mandarin, no Latin form (en empty)."
+ },
+ {
+  "entity_id": "companies_tw:257",
+  "surface": "SOGO百貨",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "Spoken as 'SOGO百貨' (SOGO in Latin letters, 百貨 in Chinese); the full English 'Pacific SOGO' is not the spoken form, so keep the surface — TTS reads 'SOGO' in Latin anyway."
+ },
+ {
+  "entity_id": "companies_intl:583",
+  "surface": "妮維雅",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Nivea skincare; 妮維雅 is the official, advertised, widely-used Taiwan Chinese name, though some speakers code-switch to 'Nivea' — judgment call."
+ },
+ {
+  "entity_id": "people_tw:365",
+  "surface": "藍正龍",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese actor; natively Chinese name, always spoken as 藍正龍, never 'Blue Lan'."
+ },
+ {
+  "entity_id": "people_tw:231",
+  "surface": "張雨生",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese rock/pop singer; Chinese name is the only spoken form in Taiwan."
+ },
+ {
+  "entity_id": "companies_tw:129",
+  "surface": "台塑集團",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese conglomerate; Taiwanese say 台塑/台塑集團, not 'Formosa Plastics'."
+ },
+ {
+  "entity_id": "people_tw:144",
+  "surface": "王文淵",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese businessman (Formosa Plastics); native Chinese name, spoken in Mandarin."
+ },
+ {
+  "entity_id": "companies_tw:236",
+  "surface": "正新",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese tire maker; the company name 正新 is spoken in Chinese (its brand Maxxis differs, but the firm is 正新)."
+ },
+ {
+  "entity_id": "companies_tw:303",
+  "surface": "卜蜂",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwan-listed agribusiness; Taiwanese say 卜蜂, not the romanized Charoen Pokphand."
+ },
+ {
+  "entity_id": "companies_intl:495",
+  "surface": "美國鋁業",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "Alcoa is little known in Taiwan; the descriptive Chinese name 美國鋁業 is readable and the standard form, so a speaker would read the Chinese."
+ },
+ {
+  "entity_id": "companies_intl:145",
+  "surface": "摩根大通",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "摩根大通 is the established Taiwan media name and dominant spoken form; finance insiders may say 'JPMorgan' but general usage reads the Chinese."
+ },
+ {
+  "entity_id": "people_intl:254",
+  "surface": "勞埃德·布蘭克梵",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "high",
+  "reason": "Obscure Western finance figure; Taiwan media use the Chinese transliteration, not 'Lloyd Blankfein'."
+ },
+ {
+  "entity_id": "companies_intl:275",
+  "surface": "聯準會",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "聯準會 is the universal Taiwan term for the US Federal Reserve; nobody code-switches to 'the Fed' in Taiwan spoken Mandarin."
+ },
+ {
+  "entity_id": "companies_intl:78",
+  "surface": "三星",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Genuine judgment call: 三星 is very common in Taiwan spoken Mandarin, but Samsung is also widely used; leaning Chinese as dominant, flagged for review."
+ },
+ {
+  "entity_id": "companies_intl:11",
+  "surface": "超微",
+  "use_english": true,
+  "english_form": "AMD",
+  "category": "acronym",
+  "confidence": "high",
+  "reason": "Taiwanese universally say 'AMD'; 超微 is a written form nobody pronounces aloud."
+ },
+ {
+  "entity_id": "people_intl:497",
+  "surface": "菲爾普斯",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "high",
+  "reason": "Western swimmer; Taiwan media use the Chinese transliteration 菲爾普斯."
+ },
+ {
+  "entity_id": "people_intl:430",
+  "surface": "內馬爾",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "high",
+  "reason": "Brazilian footballer; Taiwan uses the Chinese transliteration 內馬爾."
+ },
+ {
+  "entity_id": "people_intl:897",
+  "surface": "巴德·邦尼",
+  "use_english": true,
+  "english_form": "Bad Bunny",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "English stage name; the transliteration 巴德·邦尼 is not established, and Taiwanese listeners say 'Bad Bunny' in English."
+ },
+ {
+  "entity_id": "people_intl:764",
+  "surface": "Red Velvet",
+  "use_english": true,
+  "english_form": "Red Velvet",
+  "category": "gray",
+  "confidence": "high",
+  "reason": "K-pop group with an English stage name; surface is already Latin and Taiwanese say 'Red Velvet'."
+ },
+ {
+  "entity_id": "companies_intl:182",
+  "surface": "路透",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "medium",
+  "reason": "路透/路透社 is the established and dominant spoken form in Taiwan news; some say 'Reuters' but the Chinese prevails."
+ },
+ {
+  "entity_id": "people_intl:24",
+  "surface": "拉夫羅夫",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "high",
+  "reason": "Russian foreign minister; Taiwan media use the Chinese transliteration 拉夫羅夫."
+ },
+ {
+  "entity_id": "companies_intl:449",
+  "surface": "盧克石油",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Obscure Russian oil firm; 盧克石油 is the standard Chinese name and a speaker would read it rather than say 'Lukoil'."
+ },
+ {
+  "entity_id": "companies_intl:516",
+  "surface": "法國燃氣蘇伊士",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Very obscure in Taiwan; the long descriptive Chinese name would be read aloud; almost nobody knows 'Engie'."
+ },
+ {
+  "entity_id": "people_intl:692",
+  "surface": "蕾哈娜",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-person",
+  "confidence": "medium",
+  "reason": "Pop star; 蕾哈娜 is a well-established Taiwan transliteration and the dominant spoken form, though some say 'Rihanna'."
+ },
+ {
+  "entity_id": "people_intl:759",
+  "surface": "少女時代",
+  "use_english": false,
+  "english_form": "",
+  "category": "cjk-origin",
+  "confidence": "high",
+  "reason": "Korean group; Taiwanese read the Chinese name 少女時代, not 'Girls' Generation'."
+ },
+ {
+  "entity_id": "people_intl:230",
+  "surface": "黃仁勳",
+  "use_english": false,
+  "english_form": "",
+  "category": "cjk-origin",
+  "confidence": "high",
+  "reason": "Taiwan media say 黃仁勳, not 'Jensen Huang'; natively Chinese name."
+ },
+ {
+  "entity_id": "companies_tw:62",
+  "surface": "奇力新",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese passive-components maker; spoken as 奇力新, not 'Chilisin'."
+ },
+ {
+  "entity_id": "companies_tw:128",
+  "surface": "台塑化",
+  "use_english": false,
+  "english_form": "",
+  "category": "taiwan",
+  "confidence": "high",
+  "reason": "Taiwanese petrochemical firm; Taiwanese say 台塑化, not 'Formosa Petrochemical'."
+ },
+ {
+  "entity_id": "companies_intl:254",
+  "surface": "永明金融",
+  "use_english": false,
+  "english_form": "",
+  "category": "gray",
+  "confidence": "low",
+  "reason": "Sun Life has low presence in Taiwan; 永明金融 is its official Chinese name and would be read aloud."
+ },
+ {
+  "entity_id": "companies_intl:638",
+  "surface": "愛迪達",
+  "use_english": true,
+  "english_form": "Adidas",
+  "category": "western-brand",
+  "confidence": "high",
+  "reason": "Western sports brand Taiwanese normally say in English ('Adidas'); per Taiwan code-switch norm for Nike/Adidas."
+ },
+ {
+  "entity_id": "companies_intl:572",
+  "surface": "迪卡儂",
+  "use_english": false,
+  "english_form": "",
+  "category": "western-brand",
+  "confidence": "medium",
+  "reason": "Decathlon is marketed and spoken in Taiwan as 迪卡儂; the Chinese name is the dominant, well-established spoken form."
+ }
+]

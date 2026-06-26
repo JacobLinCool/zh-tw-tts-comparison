@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台灣中文 TTS 比較 — 試聽總覽</title>
+<style>
+  :root { --bg:#0f1115; --card:#171a21; --line:#272b35; --fg:#e6e8ee; --mut:#9aa3b2; --acc:#6ea8fe; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { position:sticky; top:0; z-index:5; background:#0f1115ee; backdrop-filter:blur(8px);
+           border-bottom:1px solid var(--line); padding:10px 16px; }
+  header h1 { font-size:16px; margin:0 0 6px; display:inline-block; }
+  header .nav { float:right; display:flex; gap:14px; align-items:center; }
+  header a { color:var(--acc); text-decoration:none; }
+  header a.cta { background:var(--acc); color:#0b1020; padding:4px 11px; border-radius:7px; font-weight:600; }
+  .controls { display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center; font-size:13px; color:var(--mut); }
+  .controls label { cursor:pointer; user-select:none; }
+  .controls .mdl { padding:1px 7px; border:1px solid var(--line); border-radius:11px; }
+  .controls .mdl input { vertical-align:-1px; margin-right:4px; }
+  main { padding:14px 16px 60vh; max-width:1100px; margin:0 auto; }
+  .hero { border:1px solid var(--line); border-radius:12px; background:var(--card); padding:16px 18px; margin-bottom:16px; }
+  .hero h2 { margin:0 0 8px; font-size:18px; }
+  .hero p { margin:6px 0; color:var(--mut); }
+  .hero .pill { display:inline-block; background:#0d0f13; border:1px solid var(--line); border-radius:20px; padding:2px 10px; margin:4px 6px 0 0; font-size:12px; }
+  .hero b { color:var(--fg); }
+  .card { border:1px solid var(--line); border-radius:10px; margin-bottom:12px; background:var(--card); }
+  .card > .hd { padding:9px 12px; border-bottom:1px solid var(--line); }
+  .tags { color:var(--mut); font-size:12px; }
+  .tags .b { color:var(--acc); }
+  .ref { margin-top:4px; font-size:15px; }
+  .ref mark { background:#2b3a55; color:#cfe0ff; padding:0 2px; border-radius:3px; }
+  .body { padding:6px 12px 12px; }
+  table { width:100%; border-collapse:collapse; }
+  td, th { padding:5px 8px; border-top:1px solid var(--line); vertical-align:middle; text-align:left; }
+  th { color:var(--mut); font-weight:600; font-size:12px; border-top:none; }
+  td.m { color:var(--mut); white-space:nowrap; font-variant:tabular-nums; }
+  td.tw .m::after { content:" \1F1F9\1F1FC"; }
+  audio { height:32px; vertical-align:middle; }
+  .mer { font-size:11px; color:var(--mut); font-variant:tabular-nums; white-space:nowrap; }
+  .mer b { color:#8bd4a0; } .mer b.hi { color:#e08b8b; } .mer b.mid { color:#e0c98b; }
+  .hyp { font-size:11px; color:var(--mut); margin-top:2px; display:none; }
+  .show-hyp .hyp { display:block; }
+  .err { color:#e08b8b; font-size:12px; }
+  .ph { color:var(--mut); font-size:12px; padding:8px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>台灣中文 TTS 比較 <span class="tags" id="count"></span></h1>
+  <span class="nav">
+    <a href="results.html">結果報告</a>
+    <a href="leaderboard.html">人類偏好榜</a>
+    <a class="cta" id="spacelink" target="_blank" rel="noopener">🎧 參加盲測</a>
+  </span>
+  <div class="controls" id="controls">
+    <label>長度：
+      <select id="len"><option value="all">全部</option><option value="short">短句 (XS/S)</option><option value="long">長句 (M)</option></select>
+    </label>
+    <label><input type="checkbox" id="hyp"> 顯示 ASR 辨識文字</label>
+    <span id="models"></span>
+  </div>
+</header>
+<main id="main">
+  <div class="hero">
+    <h2>state-of-the-art open-source TTS 在台灣中文／中英混說的表現</h2>
+    <p>台灣的日常語境裡，中文常和英文混著用（品牌、人名、術語）。這裡比較 <b>7 個開源 TTS 系統</b>
+       在 25 句台灣中文 / code-switch 句子上的合成結果，每句涵蓋多種輸入條件，全部可直接試聽。</p>
+    <p>客觀指標（雙 ASR 的 MER）顯示前段模型已難分高下——所以最終要靠<b>人耳偏好</b>。
+       歡迎到 <a id="spacelink2" target="_blank" rel="noopener">盲測平台</a> 投幾票，結果會即時反映在
+       <a href="leaderboard.html">人類偏好榜</a>。完整方法與數據見 <a href="results.html">結果報告</a>。</p>
+    <div>
+      <span class="pill">raw：原句</span>
+      <span class="pill">controlled：注音／拼音控制</span>
+      <span class="pill">ensub：英文品牌原名</span>
+      <span class="pill">ensub_ctrl：英文原名＋中文控制</span>
+    </div>
+  </div>
+</main>
+
+<script>
+const ORDER = ["breezyvoice","omnivoice","cosyvoice3","voxcpm2","moss","qwen3tts","chatterbox"];
+const TW = new Set(["breezyvoice"]);
+const SPACE_URL = "https://huggingface.co/spaces/JacobLinCool/zh-tw-tts-arena";
+let DATA, activeModels;
+
+document.getElementById('spacelink').href = SPACE_URL;
+document.getElementById('spacelink2').href = SPACE_URL;
+
+function esc(s){ return String(s==null?'':s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+function highlight(text, ents) {
+  const list = [...new Set(ents)].filter(x => x && /[一-鿿]/.test(x)).sort((a,b)=>b.length-a.length);
+  if (!list.length) return esc(text);
+  let i = 0, out = '';
+  while (i < text.length) {
+    const e = list.find(x => text.startsWith(x, i));
+    if (e) { out += '<mark>' + esc(e) + '</mark>'; i += e.length; }
+    else { out += esc(text[i]); i++; }
+  }
+  return out;
+}
+
+function merCell(c) {
+  if (!c) return '';
+  if (c.error) return '<span class="err">✗ ' + esc(String(c.error).split(':')[0]) + '</span>';
+  const fmt = (v) => v==null ? '–' : '<b class="'+(v>0.3?'hi':v>0.12?'mid':'')+'">'+v.toFixed(3)+'</b>';
+  return '<div class="mer">q '+fmt(c.mer_q)+' · b '+fmt(c.mer_b)+'</div>';
+}
+
+function buildTable(s) {
+  const conds = DATA.conditions;
+  let h = '<table><tr><th>model</th>' + conds.map(c=>'<th>'+c+'</th>').join('') + '</tr>';
+  for (const m of activeModels) {
+    const row = s.clips[m] || {};
+    h += '<tr class="'+(TW.has(m)?'tw':'')+'"><td class="m">'+m+'</td>';
+    for (const cond of conds) {
+      const c = row[cond];
+      if (!c) { h += '<td></td>'; continue; }
+      h += '<td><audio controls preload="none" src="'+esc(c.wav)+'"></audio>' + merCell(c)
+         + '<div class="hyp">q: '+esc(c.hyp_q)+'<br>b: '+esc(c.hyp_b)+'</div></td>';
+    }
+    h += '</tr>';
+  }
+  return h + '</table>';
+}
+
+const obs = new IntersectionObserver((entries) => {
+  for (const e of entries) {
+    const card = e.target, body = card.querySelector('.body');
+    if (e.isIntersecting) {
+      if (!card.dataset.on) { body.innerHTML = buildTable(card._s); card.dataset.on = '1'; body.style.minHeight=''; }
+    } else if (card.dataset.on) {
+      body.style.minHeight = body.offsetHeight + 'px';
+      body.innerHTML = ''; delete card.dataset.on;
+    }
+  }
+}, { rootMargin: '800px 0px' });
+
+function render() {
+  const main = document.getElementById('main');
+  [...main.querySelectorAll('.card')].forEach(c => c.remove());
+  obs.disconnect();
+  const len = document.getElementById('len').value;
+  const list = DATA.sentences.filter(s =>
+    len==='all' ? true : len==='long' ? ['M','L'].includes(s.bucket) : ['XS','S'].includes(s.bucket));
+  document.getElementById('count').textContent = list.length + ' 句 · ' + activeModels.length + ' 模型';
+  for (const s of list) {
+    const card = document.createElement('div'); card.className = 'card'; card._s = s;
+    card.innerHTML = '<div class="hd"><span class="tags"><span class="b">'+esc(s.bucket)+'</span> · '
+      + esc(s.register||'') + ' · ' + (s.est_duration_s? s.est_duration_s.toFixed(1)+'s':'') + ' · ' + esc(s.id)
+      + '</span><div class="ref">'+highlight(s.text, s.entities)+'</div></div>'
+      + '<div class="body"><div class="ph">捲動以載入…</div></div>';
+    main.appendChild(card); obs.observe(card);
+  }
+}
+
+function buildModelToggles() {
+  const box = document.getElementById('models');
+  box.innerHTML = 'models: ';
+  for (const m of DATA.models) {
+    box.insertAdjacentHTML('beforeend',
+      '<span class="mdl"><label><input type="checkbox" id="m_'+m+'" checked>'+m+'</label></span>');
+  }
+  box.addEventListener('change', () => {
+    activeModels = DATA.models.filter(m => document.getElementById('m_'+m).checked);
+    render();
+  });
+}
+
+fetch('manifest.json').then(r=>r.json()).then(d => {
+  DATA = d;
+  DATA.models = ORDER.filter(m=>d.models.includes(m)).concat(d.models.filter(m=>!ORDER.includes(m)));
+  activeModels = [...DATA.models];
+  buildModelToggles();
+  document.getElementById('len').addEventListener('change', render);
+  document.getElementById('hyp').addEventListener('change', e =>
+    document.body.classList.toggle('show-hyp', e.target.checked));
+  render();
+}).catch(e => {
+  document.getElementById('main').insertAdjacentHTML('beforeend',
+    '<div class="ph">無法載入 manifest.json（請先執行 build_pages.py）：'+esc(e.message)+'</div>');
+});
+</script>
+</body>
+</html>
