@@ -7,7 +7,7 @@ sdk: gradio
 sdk_version: 6.19.0
 app_file: app.py
 pinned: false
-short_description: Blind A/B listening test for Taiwan-Mandarin / code-switch TTS
+short_description: Blind A/B listening test for Taiwan-Mandarin TTS
 ---
 
 # zh-TW TTS Arena — Blind A/B listening test
