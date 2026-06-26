@@ -5,78 +5,153 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>台灣中文 TTS 比較 — 試聽總覽</title>
 <style>
-  :root { --bg:#0f1115; --card:#171a21; --line:#272b35; --fg:#e6e8ee; --mut:#9aa3b2; --acc:#6ea8fe; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
-  header { position:sticky; top:0; z-index:5; background:#0f1115ee; backdrop-filter:blur(8px);
-           border-bottom:1px solid var(--line); padding:10px 16px; }
-  header h1 { font-size:16px; margin:0 0 6px; display:inline-block; }
-  header .nav { float:right; display:flex; gap:14px; align-items:center; }
-  header a { color:var(--acc); text-decoration:none; }
-  header a.cta { background:var(--acc); color:#0b1020; padding:4px 11px; border-radius:7px; font-weight:600; }
-  .controls { display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center; font-size:13px; color:var(--mut); }
-  .controls label { cursor:pointer; user-select:none; }
-  .controls .mdl { padding:1px 7px; border:1px solid var(--line); border-radius:11px; }
-  .controls .mdl input { vertical-align:-1px; margin-right:4px; }
-  main { padding:14px 16px 60vh; max-width:1100px; margin:0 auto; }
-  .hero { border:1px solid var(--line); border-radius:12px; background:var(--card); padding:16px 18px; margin-bottom:16px; }
-  .hero h2 { margin:0 0 8px; font-size:18px; }
-  .hero p { margin:6px 0; color:var(--mut); }
-  .hero .pill { display:inline-block; background:#0d0f13; border:1px solid var(--line); border-radius:20px; padding:2px 10px; margin:4px 6px 0 0; font-size:12px; }
-  .hero b { color:var(--fg); }
-  .card { border:1px solid var(--line); border-radius:10px; margin-bottom:12px; background:var(--card); }
-  .card > .hd { padding:9px 12px; border-bottom:1px solid var(--line); }
-  .tags { color:var(--mut); font-size:12px; }
-  .tags .b { color:var(--acc); }
-  .ref { margin-top:4px; font-size:15px; }
-  .ref mark { background:#2b3a55; color:#cfe0ff; padding:0 2px; border-radius:3px; }
-  .body { padding:6px 12px 12px; }
-  table { width:100%; border-collapse:collapse; }
-  td, th { padding:5px 8px; border-top:1px solid var(--line); vertical-align:middle; text-align:left; }
-  th { color:var(--mut); font-weight:600; font-size:12px; border-top:none; }
-  td.m { color:var(--mut); white-space:nowrap; font-variant:tabular-nums; }
-  td.tw .m::after { content:" \1F1F9\1F1FC"; }
-  audio { height:32px; vertical-align:middle; }
-  .mer { font-size:11px; color:var(--mut); font-variant:tabular-nums; white-space:nowrap; }
-  .mer b { color:#8bd4a0; } .mer b.hi { color:#e08b8b; } .mer b.mid { color:#e0c98b; }
-  .hyp { font-size:11px; color:var(--mut); margin-top:2px; display:none; }
+  :root {
+    --bg:#0e1014; --bg2:#14171e; --card:#161a22; --line:#252a35; --line2:#2f3542;
+    --fg:#e7e9ef; --mut:#9aa3b4; --dim:#6b7484; --acc:#6ea8fe; --acc-soft:#6ea8fe28;
+    --good:#7fd69a; --warn:#e6c275; --bad:#e88c8c;
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:15px/1.6 system-ui,-apple-system,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif; }
+
+  /* ---- top bar ---- */
+  header { position:sticky; top:0; z-index:20; background:#0e1014e6; backdrop-filter:blur(12px);
+           border-bottom:1px solid var(--line); }
+  .bar { max-width:1440px; margin:0 auto; padding:13px 28px; display:flex; align-items:center; gap:18px; }
+  .brand { font-size:15px; font-weight:650; letter-spacing:.2px; white-space:nowrap; }
+  .brand .n { color:var(--mut); font-weight:400; font-size:12.5px; margin-left:8px; }
+  .bar .spacer { flex:1; }
+  .bar nav { display:flex; align-items:center; gap:20px; }
+  .bar nav a { color:var(--mut); text-decoration:none; font-size:13.5px; }
+  .bar nav a:hover { color:var(--fg); }
+  .bar nav a.cta { color:#08101f; background:var(--acc); padding:6px 14px; border-radius:8px; font-weight:600; }
+  .bar nav a.cta:hover { filter:brightness(1.08); }
+
+  /* ---- controls strip ---- */
+  .tools { border-bottom:1px solid var(--line); background:var(--bg2); }
+  .tools-in { max-width:1440px; margin:0 auto; padding:10px 28px; display:flex; flex-wrap:wrap;
+              gap:10px 22px; align-items:center; font-size:13px; color:var(--mut); }
+  .tools select { background:var(--bg); border:1px solid var(--line2); color:var(--fg);
+                  border-radius:8px; padding:5px 9px; font:inherit; }
+  .tools .seg { display:flex; gap:6px; flex-wrap:wrap; }
+  .chip { padding:3px 11px; border:1px solid var(--line2); border-radius:999px; cursor:pointer;
+          user-select:none; color:var(--mut); transition:.12s; font-size:12.5px; }
+  .chip input { display:none; }
+  .chip.on { color:var(--fg); border-color:var(--acc); background:var(--acc-soft); }
+  .toggle { display:inline-flex; align-items:center; gap:7px; cursor:pointer; user-select:none; }
+  .toggle input { accent-color:var(--acc); }
+
+  main { max-width:1440px; margin:0 auto; padding:24px 28px 30vh; }
+
+  /* ---- hero ---- */
+  .hero { border:1px solid var(--line); border-radius:16px;
+          background:linear-gradient(180deg,#171c26,#13161d); padding:26px 30px; margin-bottom:26px; }
+  .hero h1 { margin:0 0 12px; font-size:23px; font-weight:680; letter-spacing:.2px; }
+  .hero p { margin:0 0 10px; color:var(--mut); max-width:78ch; font-size:14.5px; }
+  .hero p b { color:var(--fg); font-weight:600; }
+  .hero a { color:var(--acc); text-decoration:none; }
+  .hero a:hover { text-decoration:underline; }
+  .legend { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+  .legend span { font-size:12px; color:var(--mut); background:var(--bg); border:1px solid var(--line2);
+                 border-radius:8px; padding:4px 11px; }
+  .legend span b { color:var(--acc); font-weight:600; }
+
+  /* ---- sentence card ---- */
+  .card { border:1px solid var(--line); border-radius:16px; background:var(--card);
+          margin-bottom:22px; overflow:hidden; }
+  .card-hd { padding:18px 24px 4px; }
+  .meta { display:flex; align-items:center; gap:10px; font-size:12px; color:var(--dim); margin-bottom:9px; }
+  .meta .badge { background:var(--acc-soft); color:var(--acc); border-radius:6px; padding:1px 8px; font-weight:650; }
+  .meta .reg { color:var(--mut); }
+  .sent { margin:0; font-size:18px; line-height:1.95; max-width:84ch; }
+  .sent mark { background:#28384f; color:#d4e4ff; padding:1px 4px; border-radius:5px; }
+
+  .grid-wrap { overflow-x:auto; padding:14px 24px 22px; }
+  .grid { display:grid; grid-template-columns:128px repeat(var(--cols),minmax(118px,1fr));
+          gap:10px 18px; align-items:center; min-width:620px; }
+  .gh { font-size:11.5px; color:var(--dim); font-weight:600; letter-spacing:.4px; text-transform:uppercase;
+        padding-bottom:4px; border-bottom:1px solid var(--line); }
+  .gh.corner { border-bottom:none; }
+  .mname { font-size:13px; color:var(--mut); white-space:nowrap; font-variant:tabular-nums; }
+  .mname.tw::after { content:" 🇹🇼"; }
+
+  .cell { display:flex; flex-direction:column; align-items:center; gap:6px; padding:4px 0; }
+  .cell.empty { color:var(--line2); }
+  .cell.empty::before { content:"–"; font-size:16px; }
+
+  /* compact play button with progress ring */
+  .clip { position:relative; width:42px; height:42px; border-radius:50%; flex:none; cursor:pointer;
+          background:var(--bg); border:1px solid var(--line2); color:var(--fg);
+          display:grid; place-items:center; transition:.14s; padding:0; }
+  .clip:hover { border-color:var(--acc); color:var(--acc); }
+  .clip svg { width:16px; height:16px; }
+  .clip .pause { display:none; }
+  .clip.playing .play { display:none; }
+  .clip.playing .pause { display:block; }
+  .clip.active { color:var(--acc); border-color:var(--acc); }
+  .clip::after { content:""; position:absolute; inset:-3px; border-radius:50%; opacity:0; transition:opacity .2s;
+    background:conic-gradient(var(--acc) calc(var(--p,0)*1%), #0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 calc(100% - 3px));
+            mask:radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 calc(100% - 3px)); }
+  .clip.active::after { opacity:1; }
+
+  .mer { font-size:11px; color:var(--dim); font-variant:tabular-nums; white-space:nowrap; letter-spacing:.2px; }
+  .mer b { color:var(--good); font-weight:600; }
+  .mer b.mid { color:var(--warn); } .mer b.hi { color:var(--bad); }
+  .hyp { display:none; font-size:10.5px; color:var(--dim); text-align:center; max-width:150px; line-height:1.4; }
   .show-hyp .hyp { display:block; }
-  .err { color:#e08b8b; font-size:12px; }
-  .ph { color:var(--mut); font-size:12px; padding:8px 0; }
+  .cell .err { color:var(--bad); font-size:11px; }
+
+  .empty-note { color:var(--mut); padding:40px; text-align:center; }
+  @media (max-width:640px){ .bar,.tools-in,main{ padding-left:16px; padding-right:16px; } .hero{ padding:20px; } }
 </style>
 </head>
 <body>
 <header>
-  <h1>台灣中文 TTS 比較 <span class="tags" id="count"></span></h1>
-  <span class="nav">
-    <a href="results.html">結果報告</a>
-    <a href="leaderboard.html">人類偏好榜</a>
-    <a class="cta" id="spacelink" target="_blank" rel="noopener">🎧 參加盲測</a>
-  </span>
-  <div class="controls" id="controls">
-    <label>長度：
-      <select id="len"><option value="all">全部</option><option value="short">短句 (XS/S)</option><option value="long">長句 (M)</option></select>
-    </label>
-    <label><input type="checkbox" id="hyp"> 顯示 ASR 辨識文字</label>
-    <span id="models"></span>
+  <div class="bar">
+    <span class="brand">台灣中文 TTS 比較<span class="n" id="count"></span></span>
+    <span class="spacer"></span>
+    <nav>
+      <a href="results.html">結果報告</a>
+      <a href="leaderboard.html">人類偏好榜</a>
+      <a class="cta" id="spacelink" target="_blank" rel="noopener">🎧 參加盲測</a>
+    </nav>
   </div>
-</header>
-<main id="main">
-  <div class="hero">
-    <h2>state-of-the-art open-source TTS 在台灣中文／中英混說的表現</h2>
-    <p>台灣的日常語境裡，中文常和英文混著用（品牌、人名、術語）。這裡比較 <b>7 個開源 TTS 系統</b>
-       在 25 句台灣中文 / code-switch 句子上的合成結果，每句涵蓋多種輸入條件，全部可直接試聽。</p>
-    <p>客觀指標（雙 ASR 的 MER）顯示前段模型已難分高下——所以最終要靠<b>人耳偏好</b>。
-       歡迎到 <a id="spacelink2" target="_blank" rel="noopener">盲測平台</a> 投幾票，結果會即時反映在
-       <a href="leaderboard.html">人類偏好榜</a>。完整方法與數據見 <a href="results.html">結果報告</a>。</p>
-    <div>
-      <span class="pill">raw：原句</span>
-      <span class="pill">controlled：注音／拼音控制</span>
-      <span class="pill">ensub：英文品牌原名</span>
-      <span class="pill">ensub_ctrl：英文原名＋中文控制</span>
+  <div class="tools">
+    <div class="tools-in">
+      <label class="toggle">長度
+        <select id="len"><option value="all">全部</option><option value="short">短句 XS/S</option><option value="long">長句 M</option></select>
+      </label>
+      <div class="seg" id="models"></div>
+      <span class="spacer" style="flex:1"></span>
+      <label class="toggle"><input type="checkbox" id="hyp"> 顯示 ASR 辨識文字</label>
     </div>
   </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <h1>state-of-the-art 開源 TTS 在台灣中文 / 中英混說的表現</h1>
+    <p>台灣的日常語境裡，中文常和英文混著用（品牌、人名、術語）。這裡比較 <b>7 個開源 TTS 系統</b>
+       在 25 句台灣中文 / code-switch 句子上的合成結果，每句涵蓋多種輸入條件，全部可直接試聽。</p>
+    <p>客觀指標（雙 ASR 的 MER）顯示前段模型已難分高下——所以最終要靠<b>人耳偏好</b>。歡迎到
+       <a id="spacelink2" target="_blank" rel="noopener">盲測平台</a> 投幾票，結果會即時反映在
+       <a href="leaderboard.html">人類偏好榜</a>；完整方法與數據見 <a href="results.html">結果報告</a>。</p>
+    <div class="legend">
+      <span><b>raw</b> 原句</span>
+      <span><b>controlled</b> 注音／拼音控制</span>
+      <span><b>ensub</b> 英文品牌原名</span>
+      <span><b>ensub_ctrl</b> 英文原名＋中文控制</span>
+    </div>
+  </section>
+  <div id="list"></div>
 </main>
+
+<svg style="display:none">
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+</svg>
 
 <script>
 const ORDER = ["breezyvoice","omnivoice","cosyvoice3","voxcpm2","moss","qwen3tts","chatterbox"];
@@ -87,99 +162,109 @@ let DATA, activeModels;
 document.getElementById('spacelink').href = SPACE_URL;
 document.getElementById('spacelink2').href = SPACE_URL;
 
-function esc(s){ return String(s==null?'':s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+const esc = s => String(s==null?'':s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 
-function highlight(text, ents) {
+function highlight(text, ents){
   const list = [...new Set(ents)].filter(x => x && /[一-鿿]/.test(x)).sort((a,b)=>b.length-a.length);
-  if (!list.length) return esc(text);
-  let i = 0, out = '';
-  while (i < text.length) {
-    const e = list.find(x => text.startsWith(x, i));
-    if (e) { out += '<mark>' + esc(e) + '</mark>'; i += e.length; }
+  if(!list.length) return esc(text);
+  let i=0, out='';
+  while(i<text.length){
+    const e = list.find(x => text.startsWith(x,i));
+    if(e){ out += '<mark>'+esc(e)+'</mark>'; i+=e.length; }
     else { out += esc(text[i]); i++; }
   }
   return out;
 }
 
-function merCell(c) {
-  if (!c) return '';
-  if (c.error) return '<span class="err">✗ ' + esc(String(c.error).split(':')[0]) + '</span>';
-  const fmt = (v) => v==null ? '–' : '<b class="'+(v>0.3?'hi':v>0.12?'mid':'')+'">'+v.toFixed(3)+'</b>';
-  return '<div class="mer">q '+fmt(c.mer_q)+' · b '+fmt(c.mer_b)+'</div>';
+function merHtml(c){
+  if(c.error) return '<span class="err">✗ '+esc(String(c.error).split(':')[0])+'</span>';
+  const f = v => v==null ? '–' : '<b class="'+(v>0.3?'hi':v>0.12?'mid':'')+'">'+v.toFixed(3)+'</b>';
+  return '<div class="mer">q '+f(c.mer_q)+' · b '+f(c.mer_b)+'</div>';
 }
 
-function buildTable(s) {
+function cell(c){
+  if(!c) return '<div class="cell empty"></div>';
+  if(c.error) return '<div class="cell">'+merHtml(c)+'</div>';
+  return '<div class="cell">'
+    + '<button class="clip" data-src="'+esc(c.wav)+'" aria-label="play">'
+    +   '<svg class="play"><use href="#i-play"/></svg><svg class="pause"><use href="#i-pause"/></svg>'
+    + '</button>'
+    + merHtml(c)
+    + '<div class="hyp">q: '+esc(c.hyp_q)+'<br>b: '+esc(c.hyp_b)+'</div>'
+    + '</div>';
+}
+
+function cardHtml(s){
   const conds = DATA.conditions;
-  let h = '<table><tr><th>model</th>' + conds.map(c=>'<th>'+c+'</th>').join('') + '</tr>';
-  for (const m of activeModels) {
+  let g = '<div class="gh corner"></div>' + conds.map(c=>'<div class="gh">'+esc(c)+'</div>').join('');
+  for(const m of activeModels){
     const row = s.clips[m] || {};
-    h += '<tr class="'+(TW.has(m)?'tw':'')+'"><td class="m">'+m+'</td>';
-    for (const cond of conds) {
-      const c = row[cond];
-      if (!c) { h += '<td></td>'; continue; }
-      h += '<td><audio controls preload="none" src="'+esc(c.wav)+'"></audio>' + merCell(c)
-         + '<div class="hyp">q: '+esc(c.hyp_q)+'<br>b: '+esc(c.hyp_b)+'</div></td>';
-    }
-    h += '</tr>';
+    g += '<div class="mname'+(TW.has(m)?' tw':'')+'">'+esc(m)+'</div>';
+    for(const cond of conds) g += cell(row[cond]);
   }
-  return h + '</table>';
+  const dur = s.est_duration_s ? s.est_duration_s.toFixed(1)+'s' : '';
+  return '<article class="card"><div class="card-hd">'
+    + '<div class="meta"><span class="badge">'+esc(s.bucket)+'</span>'
+    +   '<span class="reg">'+esc(s.register||'')+'</span><span>'+dur+'</span><span>'+esc(s.id)+'</span></div>'
+    + '<p class="sent">'+highlight(s.text, s.entities)+'</p></div>'
+    + '<div class="grid-wrap"><div class="grid" style="--cols:'+conds.length+'">'+g+'</div></div></article>';
 }
 
-const obs = new IntersectionObserver((entries) => {
-  for (const e of entries) {
-    const card = e.target, body = card.querySelector('.body');
-    if (e.isIntersecting) {
-      if (!card.dataset.on) { body.innerHTML = buildTable(card._s); card.dataset.on = '1'; body.style.minHeight=''; }
-    } else if (card.dataset.on) {
-      body.style.minHeight = body.offsetHeight + 'px';
-      body.innerHTML = ''; delete card.dataset.on;
-    }
-  }
-}, { rootMargin: '800px 0px' });
-
-function render() {
-  const main = document.getElementById('main');
-  [...main.querySelectorAll('.card')].forEach(c => c.remove());
-  obs.disconnect();
+function render(){
   const len = document.getElementById('len').value;
   const list = DATA.sentences.filter(s =>
     len==='all' ? true : len==='long' ? ['M','L'].includes(s.bucket) : ['XS','S'].includes(s.bucket));
-  document.getElementById('count').textContent = list.length + ' 句 · ' + activeModels.length + ' 模型';
-  for (const s of list) {
-    const card = document.createElement('div'); card.className = 'card'; card._s = s;
-    card.innerHTML = '<div class="hd"><span class="tags"><span class="b">'+esc(s.bucket)+'</span> · '
-      + esc(s.register||'') + ' · ' + (s.est_duration_s? s.est_duration_s.toFixed(1)+'s':'') + ' · ' + esc(s.id)
-      + '</span><div class="ref">'+highlight(s.text, s.entities)+'</div></div>'
-      + '<div class="body"><div class="ph">捲動以載入…</div></div>';
-    main.appendChild(card); obs.observe(card);
-  }
+  document.getElementById('count').textContent = list.length+' 句 · '+activeModels.length+' 模型';
+  document.getElementById('list').innerHTML = list.length
+    ? list.map(cardHtml).join('')
+    : '<div class="empty-note">沒有符合條件的句子。</div>';
+  stopAudio();
 }
 
-function buildModelToggles() {
+function modelToggles(){
   const box = document.getElementById('models');
-  box.innerHTML = 'models: ';
-  for (const m of DATA.models) {
-    box.insertAdjacentHTML('beforeend',
-      '<span class="mdl"><label><input type="checkbox" id="m_'+m+'" checked>'+m+'</label></span>');
-  }
-  box.addEventListener('change', () => {
-    activeModels = DATA.models.filter(m => document.getElementById('m_'+m).checked);
+  box.innerHTML = DATA.models.map(m =>
+    '<label class="chip on" data-m="'+m+'"><input type="checkbox" checked>'+esc(m)+'</label>').join('');
+  box.addEventListener('change', e => {
+    const lbl = e.target.closest('.chip'); if(!lbl) return;
+    lbl.classList.toggle('on', e.target.checked);
+    activeModels = DATA.models.filter(m =>
+      box.querySelector('[data-m="'+m+'"] input').checked);
     render();
   });
 }
+
+/* ---- single shared audio + compact play buttons ---- */
+const audio = new Audio();
+let curBtn = null;
+function stopAudio(){ audio.pause(); audio.removeAttribute('src');
+  if(curBtn){ curBtn.classList.remove('active','playing'); curBtn.style.setProperty('--p',0); curBtn=null; } }
+audio.addEventListener('timeupdate', () => {
+  if(curBtn && audio.duration) curBtn.style.setProperty('--p', audio.currentTime/audio.duration*100); });
+audio.addEventListener('play',  () => curBtn && curBtn.classList.add('playing'));
+audio.addEventListener('pause', () => curBtn && curBtn.classList.remove('playing'));
+audio.addEventListener('ended', () => { if(curBtn){ curBtn.classList.remove('active','playing');
+  curBtn.style.setProperty('--p',0); curBtn=null; } });
+document.getElementById('main').addEventListener('click', e => {
+  const btn = e.target.closest('.clip'); if(!btn) return;
+  if(btn===curBtn){ audio.paused ? audio.play() : audio.pause(); return; }
+  if(curBtn){ curBtn.classList.remove('active','playing'); curBtn.style.setProperty('--p',0); }
+  curBtn = btn; btn.classList.add('active');
+  audio.src = btn.dataset.src; audio.currentTime = 0; audio.play();
+});
 
 fetch('manifest.json').then(r=>r.json()).then(d => {
   DATA = d;
   DATA.models = ORDER.filter(m=>d.models.includes(m)).concat(d.models.filter(m=>!ORDER.includes(m)));
   activeModels = [...DATA.models];
-  buildModelToggles();
+  modelToggles();
   document.getElementById('len').addEventListener('change', render);
   document.getElementById('hyp').addEventListener('change', e =>
     document.body.classList.toggle('show-hyp', e.target.checked));
   render();
 }).catch(e => {
-  document.getElementById('main').insertAdjacentHTML('beforeend',
-    '<div class="ph">無法載入 manifest.json（請先執行 build_pages.py）：'+esc(e.message)+'</div>');
+  document.getElementById('list').innerHTML =
+    '<div class="empty-note">無法載入 manifest.json（請先執行 build_pages.py）：'+esc(e.message)+'</div>';
 });
 </script>
 </body>
