@@ -168,8 +168,10 @@ def view(state: dict, phase: str, winner: str | None = None):
         gr.update(interactive=voting),  # btn_a
         gr.update(interactive=voting),  # btn_tie
         gr.update(interactive=voting),  # btn_b
-        gr.update(value="" if voting else _reveal_html(t, winner), visible=not voting),
-        gr.update(visible=not voting, value=("🎧 再聽 5 題" if last else "下一題 →")),
+        # NOTE: don't toggle `visible` here — Gradio drops visible False->True updates for
+        # components created hidden. Keep both rendered; gate via value / interactive instead.
+        gr.update(value="" if voting else _reveal_html(t, winner)),
+        gr.update(interactive=not voting, value=("🎧 再聽 5 題" if last else "下一題 →")),
     )
 
 
@@ -180,6 +182,8 @@ def on_load(state):
 
 
 def _vote(state, winner, request):
+    if not state or "trials" not in state:  # session lost → restart cleanly, don't crash/stick
+        return on_load(state)
     t = state["trials"][state["idx"]]
     save_vote(t, winner, state["session"], time.time() - state.get("t0", time.time()), request)
     state["count"] += 1
@@ -199,6 +203,8 @@ def vote_b(state, request: gr.Request):
 
 
 def on_next(state):
+    if not state or "trials" not in state:  # session lost → restart cleanly
+        return on_load(state)
     if state["idx"] < len(state["trials"]) - 1:
         state["idx"] += 1
     else:
@@ -239,8 +245,8 @@ with gr.Blocks(title="zh-TW TTS Arena — 盲測") as demo:
             btn_a = gr.Button("◀ 語音 A 較好", variant="primary")
             btn_tie = gr.Button("平手 / 分不出")
             btn_b = gr.Button("語音 B 較好 ▶", variant="primary")
-        reveal = gr.HTML(visible=False)
-        next_btn = gr.Button("下一題 →", visible=False)
+        reveal = gr.HTML()  # always rendered; empty while voting, filled on reveal
+        next_btn = gr.Button("下一題 →", variant="primary", interactive=False)
         state = gr.State()
 
     OUTPUTS = [state, progress, sent, players, btn_a, btn_tie, btn_b, reveal, next_btn]
@@ -251,4 +257,6 @@ with gr.Blocks(title="zh-TW TTS Arena — 盲測") as demo:
     next_btn.click(on_next, inputs=[state], outputs=OUTPUTS)
 
 if __name__ == "__main__":
-    demo.launch(css=CSS, theme=gr.themes.Soft())
+    # SSR + gr.State multi-step flows misbehave on Spaces (vote registers server-side but
+    # the UI doesn't update → "stuck after first vote"); run as a plain SPA instead.
+    demo.launch(css=CSS, theme=gr.themes.Soft(), ssr_mode=False)
